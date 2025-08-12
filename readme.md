@@ -5,6 +5,8 @@
 Lunar is a modular game core library based on **ECS architecture**, written in **pure C#**, and **engine-agnostic**.
 This repository contains only the public core code and does not depend on Unity or any other game engine.
 
+Lunar is developed based on [Arch-ECS](https://github.com/genaray/Arch). The license for Arch-ECS can be found [here](Licenses/Apache-2.0/LICENSE.MD).
+
 This README is temporary.
 
 ## License
@@ -25,7 +27,7 @@ Lunar is available under a dual-license model:
 Lunar 是一个基于 **ECS 架构**、**纯 C#**、**引擎无关** 的模块化游戏核心库。
 此仓库仅包含公共核心代码，不依赖 Unity 或其他游戏引擎。
 
-Lunar 基于 Arch-ECS 开发。在这里查阅 Arch-ECS的许可证。
+Lunar 基于 [Arch-ECS](https://github.com/genaray/Arch) 开发。在 [这里](Licenses/Apache-2.0/LICENSE.MD) 查阅 Arch-ECS 的许可证。
 
 此 Readme 是临时的。
 
