@@ -1,0 +1,59 @@
+Index: ../.idea/.idea.Lunar-Original/.idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/.idea.Lunar-Original/.idea/indexLayout.xml b/../.idea/.idea.Lunar-Original/.idea/indexLayout.xml
+new file mode 100644
+--- /dev/null	(date 1754977054576)
++++ b/../.idea/.idea.Lunar-Original/.idea/indexLayout.xml	(date 1754977054576)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="UserContentModel">
++    <attachedFolders />
++    <explicitIncludes />
++    <explicitExcludes />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/.idea.Lunar-Original/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/.idea.Lunar-Original/.idea/vcs.xml b/../.idea/.idea.Lunar-Original/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1754976401627)
++++ b/../.idea/.idea.Lunar-Original/.idea/vcs.xml	(date 1754976401627)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/.idea.Lunar-Original/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/.idea.Lunar-Original/.idea/.gitignore b/../.idea/.idea.Lunar-Original/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1754976334615)
++++ b/../.idea/.idea.Lunar-Original/.idea/.gitignore	(date 1754976334615)
+@@ -0,0 +1,13 @@
++# 默认忽略的文件
++/shelf/
++/workspace.xml
++# Rider 忽略的文件
++/contentModel.xml
++/modules.xml
++/projectSettingsUpdater.xml
++/.idea.Lunar-Original.iml
++# 基于编辑器的 HTTP 客户端请求
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml

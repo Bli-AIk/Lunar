@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d7007390-49ee-489b-bf45-824671b9030a" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="720924eef9e6f1d6e222eb83ef7e0115f5b98faf" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73e2e279d6754453bd834ec34d8c09cd2c00/3f/1206594a/Group`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Assets/Shaders/CircleSdf.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LunarDialogueSchema.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Test.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/doc/docfx.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.Base/Interfaces/IInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.Base/Interfaces/ILogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.Base/Interfaces/IResources.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.ECS/Components/GameObjectComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.ECS/Components/NameComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.ECS/Components/SpriteComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.ECS/GameControllerBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.ECS/Systems/SpriteCleanSystemBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Core.ECS/Systems/SpriteSyncSystemBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Lunar.Modules.TypeWriter/TypeWriter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/aik/Projects/UnityProjects/Lunar-Original/MooaLewaUI/src/Lunar.Core.Base/obj/Debug/netstandard2.1/Lunar.Core.Base.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/aik/Projects/UnityProjects/Lunar-Original/MooaLewaUI/src/Lunar.Core.Base/obj/Debug/netstandard2.1/Lunar.Core.Base.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/aik/Projects/UnityProjects/Lunar-Original/MooaLewaUI/src/Lunar.Core.Base/obj/Debug/netstandard2.1/Lunar.Core.Base.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/aik/Projects/UnityProjects/Lunar-Original/MooaLewaUI/src/Lunar.Core.Base/obj/Debug/netstandard2.1/Lunar.Core.Base.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/aik/Projects/UnityProjects/Lunar-Original/MooaLewaUI/src/Lunar.Core.Base/obj/Debug/netstandard2.1/Lunar.Core.Base.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/aik/Projects/UnityProjects/Lunar-Original/MooaLewaUI/src/Lunar.Core.Base/obj/Debug/netstandard2.1/Lunar.Core.Base.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Packages/Lunar.Adapters.Unity/Runtime/com.bliaik.lunar.runtime.asmdef" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="31AqE6kGTa1e35t6oktkcyEZ7gl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Shell Script.BuildLunar.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.DocFx.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aik/Downloads/HighlightWithRules-0.1.0.zip&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.HWR JSON&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Shell Script.BuildLunar">
+    <configuration name="BuildLunar" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../BuildLunar.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="DocFx" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="docfx docfx.json --serve" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/doc" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Shell Script.BuildLunar" />
+      <item itemvalue="Shell Script.DocFx" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="d7007390-49ee-489b-bf45-824671b9030a" name="更改" comment="" />
+      <created>1754977110310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754977110310</updated>
+      <workItem from="1754977111991" duration="92000" />
+      <workItem from="1754977617545" duration="7000" />
+      <workItem from="1754977844126" duration="2037000" />
+      <workItem from="1754990269420" duration="282000" />
+      <workItem from="1754990760461" duration="19000" />
+      <workItem from="1754990793201" duration="45000" />
+      <workItem from="1754991585362" duration="72000" />
+      <workItem from="1754992123593" duration="4832000" />
+      <workItem from="1755004727706" duration="2553000" />
+      <workItem from="1755056037124" duration="751000" />
+      <workItem from="1755057185430" duration="4579000" />
+      <workItem from="1755072327997" duration="4392000" />
+      <workItem from="1755076882827" duration="50000" />
+      <workItem from="1755076987811" duration="90000" />
+      <workItem from="1755084587036" duration="1876000" />
+      <workItem from="1755086572436" duration="171000" />
+      <workItem from="1755086913778" duration="921000" />
+      <workItem from="1755087940904" duration="2734000" />
+      <workItem from="1755090881096" duration="1244000" />
+      <workItem from="1755092185721" duration="2110000" />
+      <workItem from="1755094367101" duration="3491000" />
+      <workItem from="1755134765382" duration="7011000" />
+      <workItem from="1755173158783" duration="2821000" />
+      <workItem from="1755686895580" duration="1494000" />
+      <workItem from="1755688630544" duration="1355000" />
+      <workItem from="1755696932482" duration="1507000" />
+      <workItem from="1755734517396" duration="161000" />
+      <workItem from="1755737141439" duration="77000" />
+      <workItem from="1755738301075" duration="92000" />
+      <workItem from="1755767962044" duration="114000" />
+      <workItem from="1755773066215" duration="124000" />
+      <workItem from="1755782190972" duration="277000" />
+      <workItem from="1755783937193" duration="41000" />
+      <workItem from="1755850935879" duration="91000" />
+      <workItem from="1755851303661" duration="185000" />
+      <workItem from="1755852457561" duration="88000" />
+      <workItem from="1755852663121" duration="65000" />
+      <workItem from="1755853887062" duration="17000" />
+      <workItem from="1755865921059" duration="30000" />
+      <workItem from="1755867862733" duration="47000" />
+      <workItem from="1755868025224" duration="5000" />
+      <workItem from="1755868931602" duration="731000" />
+      <workItem from="1755870198360" duration="21000" />
+      <workItem from="1755870611959" duration="367000" />
+      <workItem from="1755871169829" duration="130000" />
+      <workItem from="1755871436875" duration="139000" />
+      <workItem from="1755871598317" duration="1219000" />
+      <workItem from="1755876102912" duration="1455000" />
+      <workItem from="1755911688486" duration="3699000" />
+      <workItem from="1755919952075" duration="5759000" />
+      <workItem from="1756050111395" duration="1813000" />
+      <workItem from="1756136810855" duration="2169000" />
+      <workItem from="1756191738287" duration="1874000" />
+      <workItem from="1756221773161" duration="614000" />
+      <workItem from="1756223479957" duration="255000" />
+      <workItem from="1756224019763" duration="244000" />
+      <workItem from="1756225239509" duration="153000" />
+      <workItem from="1756269019629" duration="325000" />
+      <workItem from="1756269630497" duration="39000" />
+      <workItem from="1756270687390" duration="74000" />
+      <workItem from="1756287854621" duration="373000" />
+      <workItem from="1756292922051" duration="971000" />
+      <workItem from="1756294298322" duration="126000" />
+      <workItem from="1756294494053" duration="3109000" />
+      <workItem from="1756299158369" duration="80000" />
+      <workItem from="1756305207993" duration="123000" />
+      <workItem from="1756351042929" duration="32000" />
+      <workItem from="1756356789066" duration="47000" />
+      <workItem from="1756357510948" duration="28000" />
+      <workItem from="1756358381293" duration="152000" />
+      <workItem from="1756370602883" duration="419000" />
+      <workItem from="1756371351480" duration="313000" />
+      <workItem from="1756371816162" duration="159000" />
+      <workItem from="1756373543610" duration="123000" />
+      <workItem from="1756373705814" duration="404000" />
+      <workItem from="1756384188638" duration="35000" />
+      <workItem from="1756390764793" duration="5000" />
+      <workItem from="1756390820294" duration="811000" />
+      <workItem from="1756392097074" duration="49000" />
+      <workItem from="1756393133415" duration="780000" />
+      <workItem from="1756394848314" duration="404000" />
+      <workItem from="1756436866758" duration="1442000" />
+      <workItem from="1756440369881" duration="362000" />
+      <workItem from="1756440781775" duration="136000" />
+      <workItem from="1756441221131" duration="652000" />
+      <workItem from="1756444062628" duration="802000" />
+      <workItem from="1756444927700" duration="51000" />
+      <workItem from="1756445038136" duration="285000" />
+      <workItem from="1756445496471" duration="40000" />
+      <workItem from="1756447121790" duration="217000" />
+      <workItem from="1756447721855" duration="154000" />
+      <workItem from="1756454019276" duration="351000" />
+      <workItem from="1756459761493" duration="283000" />
+      <workItem from="1756461669717" duration="316000" />
+      <workItem from="1756468657908" duration="90000" />
+      <workItem from="1756469380742" duration="711000" />
+      <workItem from="1756470222225" duration="148000" />
+      <workItem from="1756472828379" duration="44000" />
+      <workItem from="1756474464537" duration="1002000" />
+      <workItem from="1756480774876" duration="244000" />
+      <workItem from="1756481248945" duration="415000" />
+      <workItem from="1756481742728" duration="39000" />
+      <workItem from="1756481936782" duration="79000" />
+      <workItem from="1756482523099" duration="68000" />
+      <workItem from="1756485307199" duration="3000000" />
+      <workItem from="1756529755812" duration="694000" />
+      <workItem from="1756531970025" duration="41000" />
+      <workItem from="1756628259308" duration="132000" />
+      <workItem from="1756704390766" duration="109000" />
+      <workItem from="1757303710213" duration="1717000" />
+      <workItem from="1757305729540" duration="1509000" />
+      <workItem from="1757307366336" duration="102000" />
+      <workItem from="1757308099415" duration="200000" />
+      <workItem from="1757309680824" duration="298000" />
+      <workItem from="1757323924555" duration="1246000" />
+      <workItem from="1757325618834" duration="273000" />
+      <workItem from="1757327056927" duration="65000" />
+      <workItem from="1757327679351" duration="292000" />
+      <workItem from="1757328292787" duration="544000" />
+      <workItem from="1757329082541" duration="335000" />
+      <workItem from="1757330847095" duration="860000" />
+      <workItem from="1757331778662" duration="287000" />
+      <workItem from="1757332999422" duration="162000" />
+      <workItem from="1757333543682" duration="1581000" />
+      <workItem from="1757335523773" duration="135000" />
+      <workItem from="1757335977039" duration="62000" />
+      <workItem from="1757477485545" duration="18000" />
+      <workItem from="1757482182329" duration="53000" />
+      <workItem from="1758099102477" duration="985000" />
+    </task>
+    <task id="LOCAL-00008" summary="feat(modules): add TypeWriter module with core functionality&#10;&#10;Add new TypeWriter module including:&#10;- Core typewriter implementation with play/pause/resume&#10;- State management and cancellation support&#10;- Project structure and solution integration&#10;- Updated documentation in structure.md&#10;- Formatting fixes in project files">
+      <option name="closed" value="true" />
+      <created>1755077065589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755077065589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add TMP">
+      <option name="closed" value="true" />
+      <created>1755084632300</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755084632300</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(TypeWriter): add cancellation support and Arch dependency&#10;&#10;- Added Cancel() method to TypeWriter&#10;- Implemented linked CancellationTokenSource for better cancellation handling&#10;- Added Arch package reference to csproj&#10;- Updated Test.cs to support cancellation via KeyCode.C">
+      <option name="closed" value="true" />
+      <created>1755089225742</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1755089225742</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix(TypeWriter): improve cancellation handling and cleanup&#10;&#10;Refactor internal token source management and state transitions. Ensure proper cleanup and handle cancellation more reliably during typewriter updates.">
+      <option name="closed" value="true" />
+      <created>1755091757414</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1755091757414</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add DocFX">
+      <option name="closed" value="true" />
+      <created>1755097380814</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1755097380814</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix github-pages.yml">
+      <option name="closed" value="true" />
+      <created>1755097545207</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1755097545207</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(test): add TypeWriter test module with initial test case&#10;&#10;Add new test project for TypeWriter module including:&#10;- Basic test project setup with xUnit&#10;- Initial test case for StartAsync behavior&#10;- Solution file update to include test project">
+      <option name="closed" value="true" />
+      <created>1755137618196</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1755137618196</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(TypeWriter): add FluentAssertions and enhance test coverage&#10;&#10;Added FluentAssertions package and implemented comprehensive tests for TypeWriter module, including pause/resume, cancellation, and concurrent operation handling. Also extended StartAsync to accept dynamic source text.">
+      <option name="closed" value="true" />
+      <created>1755139005382</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1755139005382</updated>
+    </task>
+    <task id="LOCAL-00016" summary="chore: remove Unity adapter and clean up project structure&#10;&#10;Removed Lunar.Adapters.Unity project and its related files. Added IResources interface to core Lunar project. Updated project settings to enable nullable references and set LangVersion to 9.">
+      <option name="closed" value="true" />
+      <created>1755688751368</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1755688751368</updated>
+    </task>
+    <task id="LOCAL-00017" summary="chore(project): reorganize test scripts and add IDE configs&#10;&#10;Deleted old test script from Assets root. Moved test script to Assets/Scripts/Tests namespace. Added UnityEngine adapter structure. Updated Rider IDE configuration files.">
+      <option name="closed" value="true" />
+      <created>1755688786056</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1755688786056</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix(TypeWriter): Fix race condition in cancellation handling&#10;&#10;Refactor Update method to accept CancellationTokenSource for proper state synchronization. Add check to ensure state is only set to Cancelled when the correct token source is active. Fix whitespace formatting.">
+      <option name="closed" value="true" />
+      <created>1755872058878</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1755872058878</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat(TypeWriterDemo): add debug logs for input actions">
+      <option name="closed" value="true" />
+      <created>1755872075924</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1755872075924</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: Add JSON schema and test files for dialogue system">
+      <option name="closed" value="true" />
+      <created>1755877300952</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1755877300952</updated>
+    </task>
+    <task id="LOCAL-00021" summary="chore(tests): reorganize test assets and add YAML test file&#10;&#10;Move sprite assets to Tests/Sprites directory and add Test.yml for testing purposes. Update IDE configuration files accordingly.">
+      <option name="closed" value="true" />
+      <created>1755877314343</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1755877314343</updated>
+    </task>
+    <task id="LOCAL-00022" summary="chore: update JSON schema and test files to use object structure">
+      <option name="closed" value="true" />
+      <created>1755913195601</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1755913195601</updated>
+    </task>
+    <task id="LOCAL-00023" summary="chore: update JSON schema and test files&#10;&#10;Updated LunarDialogueSchema.json patternProperties regex to exclude '$' prefixed keys. Added $schema references to Test.json and Test.yml. Adjusted config indices and consolidated test content across both files.">
+      <option name="closed" value="true" />
+      <created>1755914328587</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1755914328587</updated>
+    </task>
+    <task id="LOCAL-00024" summary="chore: Remove IDE-specific JSON schema configuration file">
+      <option name="closed" value="true" />
+      <created>1755914923270</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1755914923270</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat(sprite): Refactor sprite loading to be asynchronous&#10;&#10;Refactored SpriteComponent to track loading state and SpriteSyncSystemBase to process sprite loading asynchronously in batches. Added LastLoadPath property and made Sprite nullable to handle async loading workflow.">
+      <option name="closed" value="true" />
+      <created>1756475212778</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1756475212778</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: Refactor service management and improve sprite loading&#10;&#10;- Replace ServiceLocator with ServiceRegistry for better flexibility&#10;- Enhance SpriteSyncSystem with async resource loading and error handling&#10;- Add sprite swapping functionality to DebugCreateObjectSystem&#10;- Update UnityConversionUtils with null safety checks&#10;- Integrate ServiceRegistry into GameController and systems">
+      <option name="closed" value="true" />
+      <created>1756475224290</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1756475224290</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor(UnityAdapter): replace ServiceLocator with GameController.Services&#10;&#10;Update demos to use GameController.Services instead of ServiceLocator.Instance. Remove ServiceLocator and related files, reorganize project structure.">
+      <option name="closed" value="true" />
+      <created>1756475242357</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1756475242357</updated>
+    </task>
+    <task id="LOCAL-00028" summary="chore(doc): update docfx template configuration">
+      <option name="closed" value="true" />
+      <created>1756485989562</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1756485989562</updated>
+    </task>
+    <task id="LOCAL-00029" summary="chore: Ignore DocFx cache and site directories">
+      <option name="closed" value="true" />
+      <created>1756486575289</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1756486575289</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fix docfx">
+      <option name="closed" value="true" />
+      <created>1756486828838</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1756486828838</updated>
+    </task>
+    <task id="LOCAL-00031" summary="chore(doc): remove modern template from docfx.json configuration">
+      <option name="closed" value="true" />
+      <created>1756486974657</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1756486974657</updated>
+    </task>
+    <task id="LOCAL-00032" summary="docs: update README with project name and description changes&#10;&#10;Renamed project to UnityDocFX and simplified description to reflect its purpose as a 1:1 Unity Documentation style template based on UnityFX.">
+      <option name="closed" value="true" />
+      <created>1756487716284</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1756487716284</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat(shaders): add compute shader demo and polygon validation&#10;&#10;- Add CircleSdf.compute shader for GPU-based SDF rendering&#10;- Create ComputeDemo MonoBehaviour to dispatch compute shader&#10;- Add validation for polygon point count in PolygonSdfRenderer&#10;- Update SampleScene with compute shader demo object">
+      <option name="closed" value="true" />
+      <created>1757305364645</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1757305364645</updated>
+    </task>
+    <task id="LOCAL-00034" summary="chore: restructure project into Lunar.Core namespace&#10;&#10;Moved core classes and interfaces to new Lunar.Core project. Updated namespaces and solution file to reflect new structure.">
+      <option name="closed" value="true" />
+      <created>1757305486613</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1757305486613</updated>
+    </task>
+    <task id="LOCAL-00035" summary="refactor(core): restructure project into Core.Base and Core.ECS&#10;&#10;Split Lunar.Core into two separate projects: Lunar.Core.Base for engine-agnostic abstractions and Lunar.Core.ECS for ECS implementation. Moved core classes, interfaces, and components to appropriate projects. Updated solution file and documentation to reflect new structure.">
+      <option name="closed" value="true" />
+      <created>1757307224566</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1757307224566</updated>
+    </task>
+    <task id="LOCAL-00036" summary="refactor(Interfaces): update namespace from ECS to Base.Interfaces&#10;&#10;Updated IInput and ILogger interfaces to use Lunar.Core.Base.Interfaces namespace instead of Lunar.Core.ECS.Interfaces for better organization.">
+      <option name="closed" value="true" />
+      <created>1757307401792</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1757307401792</updated>
+    </task>
+    <task id="LOCAL-00037" summary="refactor(base): Rename base classes with Base suffix&#10;&#10;Rename GameObject to GameObjectBase, Sprite to SpriteBase, and KeyCode to KeyCodeBase. Update all references in IInput interface and ECS components to use the new class names. Add missing using statements in TypeWriterTest.">
+      <option name="closed" value="true" />
+      <created>1757309804767</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1757309804767</updated>
+    </task>
+    <task id="LOCAL-00038" summary="refactor(UnityAdapter): Update namespaces and types to use Lunar.Core.Base and Lunar.Core.ECS">
+      <option name="closed" value="true" />
+      <created>1757309815192</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1757309815192</updated>
+    </task>
+    <task id="LOCAL-00039" summary="chore(addressables): update assembly references and namespaces&#10;&#10;Update assembly definition precompiled references from Lunar.dll to Lunar.Core.Base.dll and Lunar.Core.ECS.dll. Update namespace from Lunar.Interfaces to Lunar.Core.Base.Interfaces in AddressablesAdapter.cs to align with new assembly structure.">
+      <option name="closed" value="true" />
+      <created>1757309826393</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1757309826393</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat(core): restructure Lunar.Core namespace and update adapters&#10;&#10;Refactor core base classes with Base suffix (GameObjectBase, KeyCodeBase, SpriteBase). Update Unity adapters and TypeWriter demo to use new namespace structure. Add new Lunar.Core.Base and Lunar.Core.ECS assemblies.">
+      <option name="closed" value="true" />
+      <created>1757309839539</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1757309839539</updated>
+    </task>
+    <task id="LOCAL-00041" summary="refactor: Rename base classes to handle and update references&#10;&#10;Renamed SpriteBase, KeyCodeBase, and GameObjectBase to SpriteHandle, KeyCodeHandle, and GameObjectHandle respectively. Updated all references in IInput interface and ECS components to use new naming convention. Changed property names from Base* to Native* for consistency.">
+      <option name="closed" value="true" />
+      <created>1757309978820</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1757309978820</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update .gitignore">
+      <option name="closed" value="true" />
+      <created>1757327114108</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1757327114109</updated>
+    </task>
+    <task id="LOCAL-00043" summary="chore: add project license and readme files">
+      <option name="closed" value="true" />
+      <created>1757329394898</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1757329394898</updated>
+    </task>
+    <task id="LOCAL-00044" summary="chore: update VCS mappings for MooaLewaUI module">
+      <option name="closed" value="true" />
+      <created>1757329413902</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1757329413902</updated>
+    </task>
+    <task id="LOCAL-00045" summary="chore: Update project paths and NuGet tool version in build artifacts">
+      <option name="closed" value="true" />
+      <created>1757330953894</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1757330953894</updated>
+    </task>
+    <task id="LOCAL-00046" summary="chore: Update assembly info metadata for Lunar.Core.Base">
+      <option name="closed" value="true" />
+      <created>1757330978334</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1757330978334</updated>
+    </task>
+    <task id="LOCAL-00047" summary="chore: add .gitignore file for C# project">
+      <option name="closed" value="true" />
+      <created>1757331101909</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1757331101909</updated>
+    </task>
+    <task id="LOCAL-00048" summary="chore: Clean up build artifacts and cache files">
+      <option name="closed" value="true" />
+      <created>1757331166324</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1757331166324</updated>
+    </task>
+    <task id="LOCAL-00049" summary="chore: add Lunar.Core.Base project to solution and update references&#10;&#10;Add new project Lunar.Core.Base to the solution and include it as a project reference in Lunar.Framework.MooaLewaUI. Also add a new Sample.mlxaml file and update VCS mappings.">
+      <option name="closed" value="true" />
+      <created>1757331183331</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1757331183331</updated>
+    </task>
+    <task id="LOCAL-00050" summary="chore(doc): remove manifest.json and update base checksum">
+      <option name="closed" value="true" />
+      <created>1757331192215</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1757331192216</updated>
+    </task>
+    <task id="LOCAL-00051" summary="chore(IDE): update VCS mappings and workspace configuration&#10;&#10;Updated VCS mappings to include MooaLewaUI directory and Lunar.Core.Base. Cleaned up workspace.xml by removing stale change list entries and updating recent Git root path.">
+      <option name="closed" value="true" />
+      <created>1757331202434</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1757331202434</updated>
+    </task>
+    <task id="LOCAL-00052" summary="chore(ci): add submodule initialization to docs workflow&#10;&#10;Add git submodule update step to GitHub Pages workflow to ensure submodules are initialized before building documentation. Also includes new solution settings file and project file changes.">
+      <option name="closed" value="true" />
+      <created>1757333676089</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1757333676090</updated>
+    </task>
+    <task id="LOCAL-00053" summary="chore(ci): add SSH setup step to GitHub Pages workflow">
+      <option name="closed" value="true" />
+      <created>1757334454770</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1757334454770</updated>
+    </task>
+    <task id="LOCAL-00054" summary="chore(ci): update GitHub Pages workflow dependencies&#10;&#10;Update actions/checkout to v4 and simplify SSH setup by using token-based authentication. Remove manual submodule update step as it's now handled by checkout action.">
+      <option name="closed" value="true" />
+      <created>1757334880235</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1757334880235</updated>
+    </task>
+    <task id="LOCAL-00055" summary="chore(ci): update GitHub Pages workflow steps&#10;&#10;Simplify checkout step and separate submodule update. Use explicit GITHUB_TOKEN for submodule initialization.">
+      <option name="closed" value="true" />
+      <created>1757334945804</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1757334945805</updated>
+    </task>
+    <task id="LOCAL-00056" summary="fix(.gitmodules): change submodule URL from SSH to HTTPS&#10;&#10;Update the URL for the 'src/Lunar.Core.Base' submodule to use HTTPS protocol instead of SSH for better compatibility.">
+      <option name="closed" value="true" />
+      <created>1757335121312</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1757335121312</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat(shaders): add compute shader demo and polygon validation&#10;&#10;- Add CircleSdf.compute shader for GPU-based SDF rendering&#10;- Create ComputeDemo MonoBehaviour to dispatch compute shader&#10;- Add validation for polygon point count in PolygonSdfRenderer&#10;- Update SampleScene with compute shader demo object" />
+    <MESSAGE value="chore: restructure project into Lunar.Core namespace&#10;&#10;Moved core classes and interfaces to new Lunar.Core project. Updated namespaces and solution file to reflect new structure." />
+    <MESSAGE value="Generating commit message..." />
+    <MESSAGE value="refactor(core): restructure project into Core.Base and Core.ECS&#10;&#10;Split Lunar.Core into two separate projects: Lunar.Core.Base for engine-agnostic abstractions and Lunar.Core.ECS for ECS implementation. Moved core classes, interfaces, and components to appropriate projects. Updated solution file and documentation to reflect new structure." />
+    <MESSAGE value="refactor(Interfaces): update namespace from ECS to Base.Interfaces&#10;&#10;Updated IInput and ILogger interfaces to use Lunar.Core.Base.Interfaces namespace instead of Lunar.Core.ECS.Interfaces for better organization." />
+    <MESSAGE value="refactor(base): Rename base classes with Base suffix&#10;&#10;Rename GameObject to GameObjectBase, Sprite to SpriteBase, and KeyCode to KeyCodeBase. Update all references in IInput interface and ECS components to use the new class names. Add missing using statements in TypeWriterTest." />
+    <MESSAGE value="refactor(UnityAdapter): Update namespaces and types to use Lunar.Core.Base and Lunar.Core.ECS" />
+    <MESSAGE value="chore(addressables): update assembly references and namespaces&#10;&#10;Update assembly definition precompiled references from Lunar.dll to Lunar.Core.Base.dll and Lunar.Core.ECS.dll. Update namespace from Lunar.Interfaces to Lunar.Core.Base.Interfaces in AddressablesAdapter.cs to align with new assembly structure." />
+    <MESSAGE value="feat(core): restructure Lunar.Core namespace and update adapters&#10;&#10;Refactor core base classes with Base suffix (GameObjectBase, KeyCodeBase, SpriteBase). Update Unity adapters and TypeWriter demo to use new namespace structure. Add new Lunar.Core.Base and Lunar.Core.ECS assemblies." />
+    <MESSAGE value="refactor: Rename base classes to handle and update references&#10;&#10;Renamed SpriteBase, KeyCodeBase, and GameObjectBase to SpriteHandle, KeyCodeHandle, and GameObjectHandle respectively. Updated all references in IInput interface and ECS components to use new naming convention. Changed property names from Base* to Native* for consistency." />
+    <MESSAGE value="update .gitignore" />
+    <MESSAGE value="chore: add project license and readme files" />
+    <MESSAGE value="chore: update VCS mappings for MooaLewaUI module" />
+    <MESSAGE value="chore: Update project paths and NuGet tool version in build artifacts" />
+    <MESSAGE value="chore: Update assembly info metadata for Lunar.Core.Base" />
+    <MESSAGE value="chore: add .gitignore file for C# project" />
+    <MESSAGE value="chore: Clean up build artifacts and cache files" />
+    <MESSAGE value="chore: add Lunar.Core.Base project to solution and update references&#10;&#10;Add new project Lunar.Core.Base to the solution and include it as a project reference in Lunar.Framework.MooaLewaUI. Also add a new Sample.mlxaml file and update VCS mappings." />
+    <MESSAGE value="chore(doc): remove manifest.json and update base checksum" />
+    <MESSAGE value="chore(IDE): update VCS mappings and workspace configuration&#10;&#10;Updated VCS mappings to include MooaLewaUI directory and Lunar.Core.Base. Cleaned up workspace.xml by removing stale change list entries and updating recent Git root path." />
+    <MESSAGE value="chore(ci): add submodule initialization to docs workflow&#10;&#10;Add git submodule update step to GitHub Pages workflow to ensure submodules are initialized before building documentation. Also includes new solution settings file and project file changes." />
+    <MESSAGE value="chore(ci): add SSH setup step to GitHub Pages workflow" />
+    <MESSAGE value="chore(ci): update GitHub Pages workflow dependencies&#10;&#10;Update actions/checkout to v4 and simplify SSH setup by using token-based authentication. Remove manual submodule update step as it's now handled by checkout action." />
+    <MESSAGE value="chore(ci): update GitHub Pages workflow steps&#10;&#10;Simplify checkout step and separate submodule update. Use explicit GITHUB_TOKEN for submodule initialization." />
+    <MESSAGE value="fix(.gitmodules): change submodule URL from SSH to HTTPS&#10;&#10;Update the URL for the 'src/Lunar.Core.Base' submodule to use HTTPS protocol instead of SSH for better compatibility." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(.gitmodules): change submodule URL from SSH to HTTPS&#10;&#10;Update the URL for the 'src/Lunar.Core.Base' submodule to use HTTPS protocol instead of SSH for better compatibility." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
