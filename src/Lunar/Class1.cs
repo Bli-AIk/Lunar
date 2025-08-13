@@ -1,4 +1,4 @@
-﻿namespace Lunar.Core
+﻿namespace Lunar
 {
     public class Class1 { }
 }
