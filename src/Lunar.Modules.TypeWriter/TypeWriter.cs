@@ -20,8 +20,8 @@ namespace Lunar.Modules.TypeWriter
         private readonly TimeSpan _delay;
         private readonly object _lock = new();
         private readonly string _sourceText;
-        private int _index;
         private CancellationTokenSource? _internalCts;
+
 
         public TypeWriter(string sourceText, TimeSpan delay)
         {
@@ -55,6 +55,8 @@ namespace Lunar.Modules.TypeWriter
         /// </summary>
         public async Task StartAsync(bool isForce = true, CancellationToken token = default)
         {
+            CancellationTokenSource newCts;
+
             lock (_lock)
             {
                 if (!isForce && (IsPlaying || IsPaused))
@@ -62,43 +64,42 @@ namespace Lunar.Modules.TypeWriter
                     return;
                 }
 
-                _internalCts?.Dispose();
-                _internalCts = CancellationTokenSource.CreateLinkedTokenSource(token);
+                _internalCts?.Cancel();
+                _internalCts?.Dispose(); 
 
+                newCts = CancellationTokenSource.CreateLinkedTokenSource(token);
+                _internalCts = newCts;
+                _builder.Clear();
                 State = State.Playing;
             }
 
             try
             {
-                await Update(_internalCts.Token).ConfigureAwait(false);
-
-                if (IsCancelled)
-                {
-                    return;
-                }
+                await Update(newCts.Token).ConfigureAwait(false);
 
                 lock (_lock)
                 {
-                    State = State.Finished;
+                    if (State != State.Cancelled) 
+                    {
+                        State = State.Finished;
+                    }
                 }
             }
             finally
             {
                 lock (_lock)
                 {
-                    _internalCts?.Dispose();
-                    _internalCts = null;
+                    if (_internalCts == newCts)
+                    {
+                        _internalCts?.Dispose();
+                        _internalCts = null;
+                    }
                 }
             }
         }
 
         private async Task Update(CancellationToken token)
         {
-            lock (_lock)
-            {
-                _builder.Clear();
-            }
-
             try
             {
                 await UpdateTypewriter(token);
@@ -114,8 +115,10 @@ namespace Lunar.Modules.TypeWriter
 
         private async Task UpdateTypewriter(CancellationToken token)
         {
-            for (_index = 0; _index < _sourceText.Length; _index++)
+            foreach (var t in _sourceText)
             {
+                token.ThrowIfCancellationRequested();
+                
                 while (IsPaused)
                 {
                     token.ThrowIfCancellationRequested();
@@ -124,7 +127,7 @@ namespace Lunar.Modules.TypeWriter
 
                 lock (_lock)
                 {
-                    _builder.Append(_sourceText[_index]);
+                    _builder.Append(t);
                 }
 
                 await Task.Delay(_delay, token).ConfigureAwait(false);
