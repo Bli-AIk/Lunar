@@ -16,11 +16,12 @@ namespace Lunar.Modules.TypeWriter
 
     public partial class TypeWriter
     {
-        private readonly StringBuilder _builder = new StringBuilder();
+        private readonly StringBuilder _builder = new();
         private readonly TimeSpan _delay;
-        private readonly object _lock = new object();
+        private readonly object _lock = new();
         private readonly string _sourceText;
         private int _index;
+        private CancellationTokenSource? _internalCts;
 
         public TypeWriter(string sourceText, TimeSpan delay)
         {
@@ -52,28 +53,42 @@ namespace Lunar.Modules.TypeWriter
         /// <summary>
         ///     Start the TypeWriter.
         /// </summary>
-        public async Task StartAsync(CancellationToken token = default)
+        public async Task StartAsync(bool isForce = true, CancellationToken token = default)
         {
             lock (_lock)
             {
-                if (IsPlaying || IsPaused)
+                if (!isForce && (IsPlaying || IsPaused))
                 {
                     return;
                 }
 
+                _internalCts?.Dispose();
+                _internalCts = CancellationTokenSource.CreateLinkedTokenSource(token);
+
                 State = State.Playing;
             }
 
-            await Update(token);
-
-            if (IsCancelled)
+            try
             {
-                return;
+                await Update(_internalCts.Token).ConfigureAwait(false);
+
+                if (IsCancelled)
+                {
+                    return;
+                }
+
+                lock (_lock)
+                {
+                    State = State.Finished;
+                }
             }
-
-            lock (_lock)
+            finally
             {
-                State = State.Finished;
+                lock (_lock)
+                {
+                    _internalCts?.Dispose();
+                    _internalCts = null;
+                }
             }
         }
 
@@ -145,6 +160,24 @@ namespace Lunar.Modules.TypeWriter
             lock (_lock)
             {
                 State = State.Playing;
+            }
+        }
+
+        /// <summary>
+        ///     Cancel the TypeWriter.
+        /// </summary>
+        public void Cancel()
+        {
+            lock (_lock)
+            {
+                if (State is State.Idle or State.Finished or State.Cancelled)
+                {
+                    return;
+                }
+
+                State = State.Cancelled;
+
+                _internalCts?.Cancel();
             }
         }
     }
