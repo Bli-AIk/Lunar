@@ -1,0 +1,52 @@
+{
+  "api/Lunar.Adapters.Unity.Class1.html": {
+    "href": "api/Lunar.Adapters.Unity.Class1.html",
+    "title": "Class Class1 | Lunar",
+    "summary": "Class Class1 Namespace Lunar.Adapters.Unity Assembly Lunar.Adapters.Unity.dll public class Class1 Inheritance object Class1 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/Lunar.Adapters.Unity.html": {
+    "href": "api/Lunar.Adapters.Unity.html",
+    "title": "Namespace Lunar.Adapters.Unity | Lunar",
+    "summary": "Namespace Lunar.Adapters.Unity Classes Class1"
+  },
+  "api/Lunar.Class1.html": {
+    "href": "api/Lunar.Class1.html",
+    "title": "Class Class1 | Lunar",
+    "summary": "Class Class1 Namespace Lunar Assembly Lunar.dll public class Class1 Inheritance object Class1 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/Lunar.Modules.TypeWriter.State.html": {
+    "href": "api/Lunar.Modules.TypeWriter.State.html",
+    "title": "Enum State | Lunar",
+    "summary": "Enum State Namespace Lunar.Modules.TypeWriter Assembly Lunar.Modules.TypeWriter.dll public enum State Fields Cancelled = 3 Finished = 4 Idle = 0 Paused = 2 Playing = 1"
+  },
+  "api/Lunar.Modules.TypeWriter.TypeWriter.html": {
+    "href": "api/Lunar.Modules.TypeWriter.TypeWriter.html",
+    "title": "Class TypeWriter | Lunar",
+    "summary": "Class TypeWriter Namespace Lunar.Modules.TypeWriter Assembly Lunar.Modules.TypeWriter.dll public class TypeWriter Inheritance object TypeWriter Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TypeWriter(string, TimeSpan) public TypeWriter(string sourceText, TimeSpan delay) Parameters sourceText string delay TimeSpan Properties IsCancelled Is the typewriter cancelled? (read-only) public bool IsCancelled { get; } Property Value bool IsPaused Is the typewriter paused? (read-only) public bool IsPaused { get; } Property Value bool IsPlaying Is the typewriter playing? (read-only) public bool IsPlaying { get; } Property Value bool ResultText The results of the text. (read-only) public string ResultText { get; } Property Value string State Current status of typewriter. (read-only) public State State { get; } Property Value State Methods Cancel() Cancel the TypeWriter. public void Cancel() Pause() Pause the TypeWriter. public void Pause() Resume() Resume the TypeWriter. public void Resume() StartAsync(bool, CancellationToken) Start the TypeWriter. public Task StartAsync(bool isForce = true, CancellationToken token = default) Parameters isForce bool token CancellationToken Returns Task"
+  },
+  "api/Lunar.Modules.TypeWriter.html": {
+    "href": "api/Lunar.Modules.TypeWriter.html",
+    "title": "Namespace Lunar.Modules.TypeWriter | Lunar",
+    "summary": "Namespace Lunar.Modules.TypeWriter Classes TypeWriter Enums State"
+  },
+  "api/Lunar.html": {
+    "href": "api/Lunar.html",
+    "title": "Namespace Lunar | Lunar",
+    "summary": "Namespace Lunar Classes Class1"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Lunar",
+    "summary": "Getting Started Don't be anxious :)"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | Lunar",
+    "summary": "Introduction Status: \uD83D\uDEA7 Initial iteration (features and structure subject to frequent changes) Lunar is a modular game core library based on ECS architecture, written in pure C#, and engine-agnostic. This repository contains only the public core code and does not depend on Unity or any other game engine. Lunar is developed based on Arch-ECS. The license for Arch-ECS can be found here. This README is temporary. License Lunar is available under a dual-license model: Open Source License (LGPL-3.0) You may use Lunar in closed-source projects as long as you do not modify Lunar’s source code. If you modify Lunar (e.g. add/change core modules), you must release those modifications under the same license (LGPL-3.0). Your own game/application code may remain closed-source. Commercial License If you wish to modify Lunar and keep those modifications closed-source, or include Lunar in a project where LGPL is not acceptable, you can contact me for a commercial license."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE... | Lunar",
+    "summary": "This is the HOMEPAGE... ...btw i use Arch and Arch."
+  }
+}
