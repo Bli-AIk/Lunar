@@ -2,11 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <PackageId>Lunar</PackageId>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Arch" Version="2.1.0"/>
-    </ItemGroup>
 
 </Project>
