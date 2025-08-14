@@ -19,7 +19,7 @@ namespace Lunar.Modules.TypeWriter
         private readonly StringBuilder _builder = new();
         private readonly TimeSpan _delay;
         private readonly object _lock = new();
-        private readonly string _sourceText;
+        private string _sourceText;
         private CancellationTokenSource? _internalCts;
 
 
@@ -49,6 +49,11 @@ namespace Lunar.Modules.TypeWriter
             }
         }
 
+        public async Task StartAsync(string sourceText,bool isForce = true, CancellationToken token = default)
+        {
+            _sourceText = sourceText;
+            await StartAsync(isForce, token);
+        }
 
         /// <summary>
         ///     Start the TypeWriter.
