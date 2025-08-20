@@ -16,9 +16,9 @@
         /// <summary>
         ///     Release resource.
         /// </summary>
-        /// <param name="path">The path to the resource</param>
+        /// <param name="resource">Resource</param>
         /// <typeparam name="T">Resource type</typeparam>
         /// <returns></returns>
-        void Release<T>(string path);
+        void Release<T>(T resource);
     }
 }
