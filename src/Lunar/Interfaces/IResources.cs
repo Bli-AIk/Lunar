@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Lunar.Interfaces
@@ -17,13 +18,28 @@ namespace Lunar.Interfaces
         T Load<T>(string path);
 
         /// <summary>
+        ///     Loading resources from folder path
+        /// </summary>
+        /// <param name="path">The path to the folder</param>
+        /// <typeparam name="T">Resource type</typeparam>
+        /// <returns>Resources</returns>
+        IEnumerable<T> LoadAll<T>(string path);
+
+        /// <summary>
         ///     Release resource.
         /// </summary>
         /// <param name="resource">Resource</param>
         /// <typeparam name="T">Resource type</typeparam>
         /// <returns></returns>
         void Release<T>(T resource);
+    }
 
+
+    /// <summary>
+    ///     (Async) Resource system interface.
+    /// </summary>
+    public interface IResourcesAsync
+    {
         /// <summary>
         ///     (Async) Loading resources.
         /// </summary>
