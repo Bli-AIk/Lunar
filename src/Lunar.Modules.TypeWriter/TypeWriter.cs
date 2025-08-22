@@ -19,8 +19,8 @@ namespace Lunar.Modules.TypeWriter
         private readonly StringBuilder _builder = new();
         private readonly TimeSpan _delay;
         private readonly object _lock = new();
-        private string _sourceText;
         private CancellationTokenSource? _internalCts;
+        private string _sourceText;
 
 
         public TypeWriter(string sourceText, TimeSpan delay)
@@ -49,7 +49,7 @@ namespace Lunar.Modules.TypeWriter
             }
         }
 
-        public async Task StartAsync(string sourceText,bool isForce = true, CancellationToken token = default)
+        public async Task StartAsync(string sourceText, bool isForce = true, CancellationToken token = default)
         {
             _sourceText = sourceText;
             await StartAsync(isForce, token);
@@ -70,7 +70,7 @@ namespace Lunar.Modules.TypeWriter
                 }
 
                 _internalCts?.Cancel();
-                _internalCts?.Dispose(); 
+                _internalCts?.Dispose();
 
                 newCts = CancellationTokenSource.CreateLinkedTokenSource(token);
                 _internalCts = newCts;
@@ -80,11 +80,11 @@ namespace Lunar.Modules.TypeWriter
 
             try
             {
-                await Update(newCts.Token).ConfigureAwait(false);
+                await Update(newCts).ConfigureAwait(false);
 
                 lock (_lock)
                 {
-                    if (State != State.Cancelled) 
+                    if (_internalCts == newCts && State != State.Cancelled)
                     {
                         State = State.Finished;
                     }
@@ -103,17 +103,20 @@ namespace Lunar.Modules.TypeWriter
             }
         }
 
-        private async Task Update(CancellationToken token)
+        private async Task Update(CancellationTokenSource localCts)
         {
             try
             {
-                await UpdateTypewriter(token);
+                await UpdateTypewriter(localCts.Token);
             }
             catch (OperationCanceledException)
             {
                 lock (_lock)
                 {
-                    State = State.Cancelled;
+                    if (_internalCts == localCts)
+                    {
+                        State = State.Cancelled;
+                    }
                 }
             }
         }
@@ -123,7 +126,7 @@ namespace Lunar.Modules.TypeWriter
             foreach (var t in _sourceText)
             {
                 token.ThrowIfCancellationRequested();
-                
+
                 while (IsPaused)
                 {
                     token.ThrowIfCancellationRequested();
