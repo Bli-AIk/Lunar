@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="LunarDialogueSchema">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="新建架构" />
+              <option name="name" value="LunarDialogueSchema" />
+              <option name="relativePathToSchema" value="LunarDialogueSchema.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="Test.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="Test.yml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
