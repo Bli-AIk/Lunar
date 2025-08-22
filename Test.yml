@@ -1,0 +1,24 @@
+- text: This is a Text
+  config:
+    - index: 0
+      event: SetSound_default
+    - index: 2
+      event: SetAnimation_idle
+    - index: 3
+      event: SetColor_red
+
+- text: This is a Text
+  config:
+    - index: 1
+      event: SetSound_click
+    - index: 2
+      event: SetAnimation_jump
+      
+- text: This is a Text
+  config:
+    - index: 1
+      event: SetSound_alert
+    - index: 2
+      event: SetAnimation_run
+    - index: 3
+      event: SetColor_blue
