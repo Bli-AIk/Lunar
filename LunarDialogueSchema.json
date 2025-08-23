@@ -4,6 +4,9 @@
   "type": "object",
   "patternProperties": {
     "^(?!\\$).*$": {
+      "type": "string"
+    },
+    "^.*$": {
       "type": "object",
       "properties": {
         "text": {
