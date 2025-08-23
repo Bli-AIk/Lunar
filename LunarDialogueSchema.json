@@ -3,7 +3,7 @@
   "$id": "https://lunar.bliaik.com/LunarDialogueSchema.json",
   "type": "object",
   "patternProperties": {
-    "^.*$": {
+    "^(?!\\$).*$": {
       "type": "object",
       "properties": {
         "text": {
