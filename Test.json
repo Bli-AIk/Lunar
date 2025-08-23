@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Text1": {
     "text": "This is a Text",
     "config": [
       {
@@ -16,20 +16,7 @@
       }
     ]
   },
-  {
-    "text": "This is a Text",
-    "config": [
-      {
-        "index": 1,
-        "event": "SetSound_click"
-      },
-      {
-        "index": 2,
-        "event": "SetAnimation_jump"
-      }
-    ]
-  },
-  {
+  "Text3": {
     "text": "This is a Text"
   }
-]
+}
