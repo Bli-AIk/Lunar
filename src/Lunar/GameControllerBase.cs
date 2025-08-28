@@ -5,33 +5,33 @@ namespace Lunar
 {
     public abstract class GameControllerBase
     {
-        protected World _mainWorld;
-        protected Group<float> _systems;
+        protected World MainWorld = null!;
+        protected Group<float> Systems = null!;
 
         public void Initialize()
         {
-            _mainWorld = World.Create();
-            _systems = CreateSystems(_mainWorld);
+            MainWorld = World.Create();
+            Systems = CreateSystems(MainWorld);
 
-            SetEvents(_mainWorld);
-            _systems.Initialize();
+            SetEvents(MainWorld);
+            Systems.Initialize();
         }
 
         public void Update(float deltaTime)
         {
-            _systems.BeforeUpdate(in deltaTime);
-            _systems.Update(in deltaTime);
+            Systems.BeforeUpdate(in deltaTime);
+            Systems.Update(in deltaTime);
         }
 
         public void LateUpdate(float deltaTime)
         {
-            _systems.AfterUpdate(in deltaTime);
+            Systems.AfterUpdate(in deltaTime);
         }
 
         public void Dispose()
         {
-            _systems.Dispose();
-            _mainWorld.Dispose();
+            Systems.Dispose();
+            MainWorld.Dispose();
         }
 
         /// <summary>
