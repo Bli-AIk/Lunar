@@ -1,4 +1,5 @@
 using Arch.Core;
+using Arch.Core.Extensions;
 using Arch.System;
 using Lunar.Components;
 
@@ -8,7 +9,8 @@ namespace Lunar.Systems
     {
         protected GameObjectSyncSystemBase(World world) : base(world) { }
 
-        protected abstract void ApplyTransform(GameObjectComponent gameObject, PositionComponent position);
+        protected abstract void SyncTransform(GameObjectComponent gameObject, PositionComponent position);
+        protected abstract void SyncName(GameObjectComponent gameObject, NameComponent name);
 
         public override void Update(in float deltaTime)
         {
@@ -16,7 +18,12 @@ namespace Lunar.Systems
             World.Query(in query,
                 (Entity entity, ref GameObjectComponent gameObject, ref PositionComponent position) =>
                 {
-                    ApplyTransform(gameObject, position);
+                    SyncTransform(gameObject, position);
+                    
+                    if (entity.Has<NameComponent>())
+                    {
+                        SyncName(gameObject, entity.Get<NameComponent>());
+                    }
                 });
         }
     }
