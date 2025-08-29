@@ -1,13 +1,23 @@
+using System.ComponentModel;
+
 namespace Lunar.Components;
 
 public struct SpriteComponent
 {
-    public SpriteComponent(Sprite sprite, string path)
+    public SpriteComponent(string path)
     {
-        Sprite = sprite;
         Path = path;
+        Sprite = null;
+    
+        LastLoadPath = null;
     }
 
-    public Sprite Sprite;
     public string Path;
+    public Sprite? Sprite;
+    public string? LastLoadPath { get; private set; }
+
+    public void SetLastLoadPath(string? lastLoadPath)
+    {
+        LastLoadPath = lastLoadPath;
+    }
 }
