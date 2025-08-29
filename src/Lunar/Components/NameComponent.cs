@@ -1,12 +1,11 @@
-namespace Lunar.Components
+namespace Lunar.Components;
+
+public struct NameComponent
 {
-    public struct NameComponent
+    public NameComponent(string name)
     {
-        public NameComponent(string name)
-        {
-            Name = name;
-        }
-        
-        public string Name;
+        Name = name;
     }
+
+    public string Name;
 }
