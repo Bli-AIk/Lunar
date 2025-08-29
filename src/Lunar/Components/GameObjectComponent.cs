@@ -1,12 +1,11 @@
-namespace Lunar.Components
-{
-    public struct GameObjectComponent
-    {
-        public GameObjectComponent(GameObject gameObject)
-        {
-            GameObject = gameObject;
-        }
+namespace Lunar.Components;
 
-        public GameObject GameObject;
+public struct GameObjectComponent
+{
+    public GameObjectComponent(GameObject gameObject)
+    {
+        GameObject = gameObject;
     }
+
+    public GameObject GameObject;
 }
