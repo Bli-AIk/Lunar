@@ -19,43 +19,34 @@ references:
 - uid: Lunar.Modules.TypeWriter.State
   commentId: T:Lunar.Modules.TypeWriter.State
   parent: Lunar.Modules.TypeWriter
-  href: Lunar.Modules.TypeWriter.State.html
   name: State
   nameWithType: State
   fullName: Lunar.Modules.TypeWriter.State
 - uid: Lunar.Modules.TypeWriter.TypeWriter
   commentId: T:Lunar.Modules.TypeWriter.TypeWriter
-  href: Lunar.Modules.TypeWriter.TypeWriter.html
   name: TypeWriter
   nameWithType: TypeWriter
   fullName: Lunar.Modules.TypeWriter.TypeWriter
 - uid: Lunar.Modules.TypeWriter
   commentId: N:Lunar.Modules.TypeWriter
-  href: Lunar.html
   name: Lunar.Modules.TypeWriter
   nameWithType: Lunar.Modules.TypeWriter
   fullName: Lunar.Modules.TypeWriter
   spec.csharp:
   - uid: Lunar
     name: Lunar
-    href: Lunar.html
   - name: .
   - uid: Lunar.Modules
     name: Modules
-    href: Lunar.Modules.html
   - name: .
   - uid: Lunar.Modules.TypeWriter
     name: TypeWriter
-    href: Lunar.Modules.TypeWriter.html
   spec.vb:
   - uid: Lunar
     name: Lunar
-    href: Lunar.html
   - name: .
   - uid: Lunar.Modules
     name: Modules
-    href: Lunar.Modules.html
   - name: .
   - uid: Lunar.Modules.TypeWriter
     name: TypeWriter
-    href: Lunar.Modules.TypeWriter.html

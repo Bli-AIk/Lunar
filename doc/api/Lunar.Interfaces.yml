@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Interfaces
+  commentId: N:Lunar.Interfaces
+  id: Lunar.Interfaces
+  children:
+  - Lunar.Interfaces.IInput
+  - Lunar.Interfaces.IInputActions
+  - Lunar.Interfaces.ILogger
+  - Lunar.Interfaces.IResources
+  - Lunar.Interfaces.IResourcesAsync
+  langs:
+  - csharp
+  - vb
+  name: Lunar.Interfaces
+  nameWithType: Lunar.Interfaces
+  fullName: Lunar.Interfaces
+  type: Namespace
+  assemblies:
+  - Lunar
+references:
+- uid: Lunar.Interfaces.IInput
+  commentId: T:Lunar.Interfaces.IInput
+  parent: Lunar.Interfaces
+  name: IInput
+  nameWithType: IInput
+  fullName: Lunar.Interfaces.IInput
+- uid: Lunar.Interfaces.IInputActions
+  commentId: T:Lunar.Interfaces.IInputActions
+  name: IInputActions
+  nameWithType: IInputActions
+  fullName: Lunar.Interfaces.IInputActions
+- uid: Lunar.Interfaces.ILogger
+  commentId: T:Lunar.Interfaces.ILogger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Lunar.Interfaces.ILogger
+- uid: Lunar.Interfaces.IResources
+  commentId: T:Lunar.Interfaces.IResources
+  name: IResources
+  nameWithType: IResources
+  fullName: Lunar.Interfaces.IResources
+- uid: Lunar.Interfaces.IResourcesAsync
+  commentId: T:Lunar.Interfaces.IResourcesAsync
+  name: IResourcesAsync
+  nameWithType: IResourcesAsync
+  fullName: Lunar.Interfaces.IResourcesAsync
+- uid: Lunar.Interfaces
+  commentId: N:Lunar.Interfaces
+  name: Lunar.Interfaces
+  nameWithType: Lunar.Interfaces
+  fullName: Lunar.Interfaces
+  spec.csharp:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Interfaces
+    name: Interfaces

@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Sprite
+  commentId: T:Lunar.Sprite
+  id: Sprite
+  parent: Lunar
+  children:
+  - Lunar.Sprite.#ctor(System.Object)
+  - Lunar.Sprite.BaseSprite
+  langs:
+  - csharp
+  - vb
+  name: Sprite
+  nameWithType: Sprite
+  fullName: Lunar.Sprite
+  type: Class
+  source:
+    remote:
+      path: src/Lunar/Sprite.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Sprite
+    path: ../src/Lunar/Sprite.cs
+    startLine: 4
+  assemblies:
+  - Lunar
+  namespace: Lunar
+  syntax:
+    content: public class Sprite
+    content.vb: Public Class Sprite
+  inheritance:
+  - System.Object
+- uid: Lunar.Sprite.#ctor(System.Object)
+  commentId: M:Lunar.Sprite.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: Lunar.Sprite
+  langs:
+  - csharp
+  - vb
+  name: Sprite(object)
+  nameWithType: Sprite.Sprite(object)
+  fullName: Lunar.Sprite.Sprite(object)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Sprite.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Sprite.cs
+    startLine: 6
+  assemblies:
+  - Lunar
+  namespace: Lunar
+  syntax:
+    content: public Sprite(object baseSprite)
+    parameters:
+    - id: baseSprite
+      type: System.Object
+    content.vb: Public Sub New(baseSprite As Object)
+  overload: Lunar.Sprite.#ctor*
+  nameWithType.vb: Sprite.New(Object)
+  fullName.vb: Lunar.Sprite.New(Object)
+  name.vb: New(Object)
+- uid: Lunar.Sprite.BaseSprite
+  commentId: P:Lunar.Sprite.BaseSprite
+  id: BaseSprite
+  parent: Lunar.Sprite
+  langs:
+  - csharp
+  - vb
+  name: BaseSprite
+  nameWithType: Sprite.BaseSprite
+  fullName: Lunar.Sprite.BaseSprite
+  type: Property
+  source:
+    remote:
+      path: src/Lunar/Sprite.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: BaseSprite
+    path: ../src/Lunar/Sprite.cs
+    startLine: 11
+  assemblies:
+  - Lunar
+  namespace: Lunar
+  syntax:
+    content: public object BaseSprite { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property BaseSprite As Object
+  overload: Lunar.Sprite.BaseSprite*
+references:
+- uid: Lunar
+  commentId: N:Lunar
+  name: Lunar
+  nameWithType: Lunar
+  fullName: Lunar
+- uid: System.Object
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lunar.Sprite.#ctor*
+  commentId: Overload:Lunar.Sprite.#ctor
+  name: Sprite
+  nameWithType: Sprite.Sprite
+  fullName: Lunar.Sprite.Sprite
+  nameWithType.vb: Sprite.New
+  fullName.vb: Lunar.Sprite.New
+  name.vb: New
+- uid: Lunar.Sprite.BaseSprite*
+  commentId: Overload:Lunar.Sprite.BaseSprite
+  name: BaseSprite
+  nameWithType: Sprite.BaseSprite
+  fullName: Lunar.Sprite.BaseSprite

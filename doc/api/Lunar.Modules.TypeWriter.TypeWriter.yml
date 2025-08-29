@@ -5,7 +5,7 @@ items:
   id: TypeWriter
   parent: Lunar.Modules.TypeWriter
   children:
-  - Lunar.Modules.TypeWriter.TypeWriter.#ctor(System.String,System.TimeSpan)
+  - Lunar.Modules.TypeWriter.TypeWriter.#ctor(System.String,TimeSpan)
   - Lunar.Modules.TypeWriter.TypeWriter.Cancel
   - Lunar.Modules.TypeWriter.TypeWriter.IsCancelled
   - Lunar.Modules.TypeWriter.TypeWriter.IsPaused
@@ -13,7 +13,8 @@ items:
   - Lunar.Modules.TypeWriter.TypeWriter.Pause
   - Lunar.Modules.TypeWriter.TypeWriter.ResultText
   - Lunar.Modules.TypeWriter.TypeWriter.Resume
-  - Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.Boolean,System.Threading.CancellationToken)
+  - Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.Boolean,CancellationToken)
+  - Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.String,System.Boolean,CancellationToken)
   - Lunar.Modules.TypeWriter.TypeWriter.State
   langs:
   - csharp
@@ -23,9 +24,13 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter
   type: Class
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: TypeWriter
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 187
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 195
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
@@ -34,28 +39,24 @@ items:
     content.vb: Public Class TypeWriter
   inheritance:
   - System.Object
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-- uid: Lunar.Modules.TypeWriter.TypeWriter.#ctor(System.String,System.TimeSpan)
-  commentId: M:Lunar.Modules.TypeWriter.TypeWriter.#ctor(System.String,System.TimeSpan)
-  id: '#ctor(System.String,System.TimeSpan)'
+- uid: Lunar.Modules.TypeWriter.TypeWriter.#ctor(System.String,TimeSpan)
+  commentId: M:Lunar.Modules.TypeWriter.TypeWriter.#ctor(System.String,TimeSpan)
+  id: '#ctor(System.String,TimeSpan)'
   parent: Lunar.Modules.TypeWriter.TypeWriter
   langs:
   - csharp
   - vb
   name: TypeWriter(string, TimeSpan)
   nameWithType: TypeWriter.TypeWriter(string, TimeSpan)
-  fullName: Lunar.Modules.TypeWriter.TypeWriter.TypeWriter(string, System.TimeSpan)
+  fullName: Lunar.Modules.TypeWriter.TypeWriter.TypeWriter(string, TimeSpan)
   type: Constructor
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: .ctor
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 25
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -66,11 +67,11 @@ items:
     - id: sourceText
       type: System.String
     - id: delay
-      type: System.TimeSpan
+      type: TimeSpan
     content.vb: Public Sub New(sourceText As String, delay As TimeSpan)
   overload: Lunar.Modules.TypeWriter.TypeWriter.#ctor*
   nameWithType.vb: TypeWriter.New(String, TimeSpan)
-  fullName.vb: Lunar.Modules.TypeWriter.TypeWriter.New(String, System.TimeSpan)
+  fullName.vb: Lunar.Modules.TypeWriter.TypeWriter.New(String, TimeSpan)
   name.vb: New(String, TimeSpan)
 - uid: Lunar.Modules.TypeWriter.TypeWriter.State
   commentId: P:Lunar.Modules.TypeWriter.TypeWriter.State
@@ -84,13 +85,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.State
   type: Property
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: State
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 35
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Current status of typewriter. (read-only)
+  summary: "\nCurrent status of typewriter. (read-only)\n"
   example: []
   syntax:
     content: public State State { get; }
@@ -111,13 +116,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.ResultText
   type: Property
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: ResultText
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 40
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: The results of the text. (read-only)
+  summary: "\nThe results of the text. (read-only)\n"
   example: []
   syntax:
     content: public string ResultText { get; }
@@ -126,39 +135,81 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property ResultText As String
   overload: Lunar.Modules.TypeWriter.TypeWriter.ResultText*
-- uid: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.Boolean,System.Threading.CancellationToken)
-  commentId: M:Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.Boolean,System.Threading.CancellationToken)
-  id: StartAsync(System.Boolean,System.Threading.CancellationToken)
+- uid: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.String,System.Boolean,CancellationToken)
+  commentId: M:Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.String,System.Boolean,CancellationToken)
+  id: StartAsync(System.String,System.Boolean,CancellationToken)
+  parent: Lunar.Modules.TypeWriter.TypeWriter
+  langs:
+  - csharp
+  - vb
+  name: StartAsync(string, bool, CancellationToken)
+  nameWithType: TypeWriter.StartAsync(string, bool, CancellationToken)
+  fullName: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(string, bool, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: StartAsync
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 51
+  assemblies:
+  - Lunar.Modules.TypeWriter
+  namespace: Lunar.Modules.TypeWriter
+  syntax:
+    content: public Task StartAsync(string sourceText, bool isForce = true, CancellationToken token = null)
+    parameters:
+    - id: sourceText
+      type: System.String
+    - id: isForce
+      type: System.Boolean
+    - id: token
+      type: CancellationToken
+    return:
+      type: Task
+    content.vb: Public Function StartAsync(sourceText As String, isForce As Boolean = True, token As CancellationToken = Nothing) As Task
+  overload: Lunar.Modules.TypeWriter.TypeWriter.StartAsync*
+  nameWithType.vb: TypeWriter.StartAsync(String, Boolean, CancellationToken)
+  fullName.vb: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(String, Boolean, CancellationToken)
+  name.vb: StartAsync(String, Boolean, CancellationToken)
+- uid: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.Boolean,CancellationToken)
+  commentId: M:Lunar.Modules.TypeWriter.TypeWriter.StartAsync(System.Boolean,CancellationToken)
+  id: StartAsync(System.Boolean,CancellationToken)
   parent: Lunar.Modules.TypeWriter.TypeWriter
   langs:
   - csharp
   - vb
   name: StartAsync(bool, CancellationToken)
   nameWithType: TypeWriter.StartAsync(bool, CancellationToken)
-  fullName: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(bool, System.Threading.CancellationToken)
+  fullName: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(bool, CancellationToken)
   type: Method
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: StartAsync
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 55
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 60
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Start the TypeWriter.
+  summary: "\nStart the TypeWriter.\n"
   example: []
   syntax:
-    content: public Task StartAsync(bool isForce = true, CancellationToken token = default)
+    content: public Task StartAsync(bool isForce = true, CancellationToken token = null)
     parameters:
     - id: isForce
       type: System.Boolean
     - id: token
-      type: System.Threading.CancellationToken
+      type: CancellationToken
     return:
-      type: System.Threading.Tasks.Task
+      type: Task
     content.vb: Public Function StartAsync(isForce As Boolean = True, token As CancellationToken = Nothing) As Task
   overload: Lunar.Modules.TypeWriter.TypeWriter.StartAsync*
   nameWithType.vb: TypeWriter.StartAsync(Boolean, CancellationToken)
-  fullName.vb: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(Boolean, System.Threading.CancellationToken)
+  fullName.vb: Lunar.Modules.TypeWriter.TypeWriter.StartAsync(Boolean, CancellationToken)
   name.vb: StartAsync(Boolean, CancellationToken)
 - uid: Lunar.Modules.TypeWriter.TypeWriter.Pause
   commentId: M:Lunar.Modules.TypeWriter.TypeWriter.Pause
@@ -172,13 +223,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.Pause()
   type: Method
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Pause
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 139
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 147
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Pause the TypeWriter.
+  summary: "\nPause the TypeWriter.\n"
   example: []
   syntax:
     content: public void Pause()
@@ -196,13 +251,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.Resume()
   type: Method
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Resume
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 155
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 163
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Resume the TypeWriter.
+  summary: "\nResume the TypeWriter.\n"
   example: []
   syntax:
     content: public void Resume()
@@ -220,13 +279,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.Cancel()
   type: Method
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Cancel
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 171
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 179
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Cancel the TypeWriter.
+  summary: "\nCancel the TypeWriter.\n"
   example: []
   syntax:
     content: public void Cancel()
@@ -244,13 +307,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.IsPlaying
   type: Property
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: IsPlaying
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 192
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 200
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Is the typewriter playing? (read-only)
+  summary: "\nIs the typewriter playing? (read-only)\n"
   example: []
   syntax:
     content: public bool IsPlaying { get; }
@@ -271,13 +338,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.IsPaused
   type: Property
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: IsPaused
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 206
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 214
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Is the typewriter paused? (read-only)
+  summary: "\nIs the typewriter paused? (read-only)\n"
   example: []
   syntax:
     content: public bool IsPaused { get; }
@@ -298,13 +369,17 @@ items:
   fullName: Lunar.Modules.TypeWriter.TypeWriter.IsCancelled
   type: Property
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: IsCancelled
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
-    startLine: 220
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    startLine: 228
   assemblies:
   - Lunar.Modules.TypeWriter
   namespace: Lunar.Modules.TypeWriter
-  summary: Is the typewriter cancelled? (read-only)
+  summary: "\nIs the typewriter cancelled? (read-only)\n"
   example: []
   syntax:
     content: public bool IsCancelled { get; }
@@ -316,274 +391,37 @@ items:
 references:
 - uid: Lunar.Modules.TypeWriter
   commentId: N:Lunar.Modules.TypeWriter
-  href: Lunar.html
   name: Lunar.Modules.TypeWriter
   nameWithType: Lunar.Modules.TypeWriter
   fullName: Lunar.Modules.TypeWriter
   spec.csharp:
   - uid: Lunar
     name: Lunar
-    href: Lunar.html
   - name: .
   - uid: Lunar.Modules
     name: Modules
-    href: Lunar.Modules.html
   - name: .
   - uid: Lunar.Modules.TypeWriter
     name: TypeWriter
-    href: Lunar.Modules.TypeWriter.html
   spec.vb:
   - uid: Lunar
     name: Lunar
-    href: Lunar.html
   - name: .
   - uid: Lunar.Modules
     name: Modules
-    href: Lunar.Modules.html
   - name: .
   - uid: Lunar.Modules.TypeWriter
     name: TypeWriter
-    href: Lunar.Modules.TypeWriter.html
 - uid: System.Object
-  commentId: T:System.Object
-  parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  name: Equals(object)
-  nameWithType: object.Equals(object)
-  fullName: object.Equals(object)
-  nameWithType.vb: Object.Equals(Object)
-  fullName.vb: Object.Equals(Object)
-  name.vb: Equals(Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Lunar.Modules.TypeWriter.TypeWriter.#ctor*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.#ctor
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter__ctor_System_String_System_TimeSpan_
   name: TypeWriter
   nameWithType: TypeWriter.TypeWriter
   fullName: Lunar.Modules.TypeWriter.TypeWriter.TypeWriter
@@ -591,173 +429,85 @@ references:
   fullName.vb: Lunar.Modules.TypeWriter.TypeWriter.New
   name.vb: New
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.TimeSpan
-  commentId: T:System.TimeSpan
-  parent: System
+- uid: TimeSpan
+  commentId: '!:TimeSpan'
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.timespan
   name: TimeSpan
   nameWithType: TimeSpan
-  fullName: System.TimeSpan
+  fullName: TimeSpan
 - uid: Lunar.Modules.TypeWriter.TypeWriter.State*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.State
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_State
   name: State
   nameWithType: TypeWriter.State
   fullName: Lunar.Modules.TypeWriter.TypeWriter.State
 - uid: Lunar.Modules.TypeWriter.State
   commentId: T:Lunar.Modules.TypeWriter.State
   parent: Lunar.Modules.TypeWriter
-  href: Lunar.Modules.TypeWriter.State.html
   name: State
   nameWithType: State
   fullName: Lunar.Modules.TypeWriter.State
 - uid: Lunar.Modules.TypeWriter.TypeWriter.ResultText*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.ResultText
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_ResultText
   name: ResultText
   nameWithType: TypeWriter.ResultText
   fullName: Lunar.Modules.TypeWriter.TypeWriter.ResultText
 - uid: Lunar.Modules.TypeWriter.TypeWriter.StartAsync*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.StartAsync
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_StartAsync_System_Boolean_System_Threading_CancellationToken_
   name: StartAsync
   nameWithType: TypeWriter.StartAsync
   fullName: Lunar.Modules.TypeWriter.TypeWriter.StartAsync
 - uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: System.Threading.CancellationToken
-  commentId: T:System.Threading.CancellationToken
-  parent: System.Threading
+- uid: CancellationToken
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   name: CancellationToken
   nameWithType: CancellationToken
-  fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
+  fullName: CancellationToken
+- uid: Task
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
   name: Task
   nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: System.Threading
-  commentId: N:System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading
-  nameWithType: System.Threading
-  fullName: System.Threading
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  fullName: Task
 - uid: Lunar.Modules.TypeWriter.TypeWriter.Pause*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.Pause
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_Pause
   name: Pause
   nameWithType: TypeWriter.Pause
   fullName: Lunar.Modules.TypeWriter.TypeWriter.Pause
 - uid: Lunar.Modules.TypeWriter.TypeWriter.Resume*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.Resume
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_Resume
   name: Resume
   nameWithType: TypeWriter.Resume
   fullName: Lunar.Modules.TypeWriter.TypeWriter.Resume
 - uid: Lunar.Modules.TypeWriter.TypeWriter.Cancel*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.Cancel
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_Cancel
   name: Cancel
   nameWithType: TypeWriter.Cancel
   fullName: Lunar.Modules.TypeWriter.TypeWriter.Cancel
 - uid: Lunar.Modules.TypeWriter.TypeWriter.IsPlaying*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.IsPlaying
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_IsPlaying
   name: IsPlaying
   nameWithType: TypeWriter.IsPlaying
   fullName: Lunar.Modules.TypeWriter.TypeWriter.IsPlaying
 - uid: Lunar.Modules.TypeWriter.TypeWriter.IsPaused*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.IsPaused
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_IsPaused
   name: IsPaused
   nameWithType: TypeWriter.IsPaused
   fullName: Lunar.Modules.TypeWriter.TypeWriter.IsPaused
 - uid: Lunar.Modules.TypeWriter.TypeWriter.IsCancelled*
   commentId: Overload:Lunar.Modules.TypeWriter.TypeWriter.IsCancelled
-  href: Lunar.Modules.TypeWriter.TypeWriter.html#Lunar_Modules_TypeWriter_TypeWriter_IsCancelled
   name: IsCancelled
   nameWithType: TypeWriter.IsCancelled
   fullName: Lunar.Modules.TypeWriter.TypeWriter.IsCancelled

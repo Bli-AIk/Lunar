@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Systems.GameObjectSyncSystemBase
+  commentId: T:Lunar.Systems.GameObjectSyncSystemBase
+  id: GameObjectSyncSystemBase
+  parent: Lunar.Systems
+  children:
+  - Lunar.Systems.GameObjectSyncSystemBase.#ctor(World)
+  - Lunar.Systems.GameObjectSyncSystemBase.SyncName(Lunar.Components.GameObjectComponent,Lunar.Components.NameComponent)
+  - Lunar.Systems.GameObjectSyncSystemBase.SyncTransform(Lunar.Components.GameObjectComponent,Lunar.Components.TransformComponent)
+  - Lunar.Systems.GameObjectSyncSystemBase.Update(System.Single@)
+  langs:
+  - csharp
+  - vb
+  name: GameObjectSyncSystemBase
+  nameWithType: GameObjectSyncSystemBase
+  fullName: Lunar.Systems.GameObjectSyncSystemBase
+  type: Class
+  source:
+    remote:
+      path: src/Lunar/Systems/GameObjectSyncSystemBase.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: GameObjectSyncSystemBase
+    path: ../src/Lunar/Systems/GameObjectSyncSystemBase.cs
+    startLine: 7
+  assemblies:
+  - Lunar
+  namespace: Lunar.Systems
+  syntax:
+    content: 'public abstract class GameObjectSyncSystemBase : BaseSystem<World, float>'
+    content.vb: Public MustInherit Class GameObjectSyncSystemBase Inherits BaseSystem(Of World, Single)
+  inheritance:
+  - System.Object
+- uid: Lunar.Systems.GameObjectSyncSystemBase.#ctor(World)
+  commentId: M:Lunar.Systems.GameObjectSyncSystemBase.#ctor(World)
+  id: '#ctor(World)'
+  parent: Lunar.Systems.GameObjectSyncSystemBase
+  langs:
+  - csharp
+  - vb
+  name: GameObjectSyncSystemBase(World)
+  nameWithType: GameObjectSyncSystemBase.GameObjectSyncSystemBase(World)
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.GameObjectSyncSystemBase(World)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Systems/GameObjectSyncSystemBase.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Systems/GameObjectSyncSystemBase.cs
+    startLine: 9
+  assemblies:
+  - Lunar
+  namespace: Lunar.Systems
+  syntax:
+    content: protected GameObjectSyncSystemBase(World world)
+    parameters:
+    - id: world
+      type: World
+    content.vb: Protected Sub New(world As World)
+  overload: Lunar.Systems.GameObjectSyncSystemBase.#ctor*
+  nameWithType.vb: GameObjectSyncSystemBase.New(World)
+  fullName.vb: Lunar.Systems.GameObjectSyncSystemBase.New(World)
+  name.vb: New(World)
+- uid: Lunar.Systems.GameObjectSyncSystemBase.SyncTransform(Lunar.Components.GameObjectComponent,Lunar.Components.TransformComponent)
+  commentId: M:Lunar.Systems.GameObjectSyncSystemBase.SyncTransform(Lunar.Components.GameObjectComponent,Lunar.Components.TransformComponent)
+  id: SyncTransform(Lunar.Components.GameObjectComponent,Lunar.Components.TransformComponent)
+  parent: Lunar.Systems.GameObjectSyncSystemBase
+  langs:
+  - csharp
+  - vb
+  name: SyncTransform(GameObjectComponent, TransformComponent)
+  nameWithType: GameObjectSyncSystemBase.SyncTransform(GameObjectComponent, TransformComponent)
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.SyncTransform(Lunar.Components.GameObjectComponent, Lunar.Components.TransformComponent)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Systems/GameObjectSyncSystemBase.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: SyncTransform
+    path: ../src/Lunar/Systems/GameObjectSyncSystemBase.cs
+    startLine: 11
+  assemblies:
+  - Lunar
+  namespace: Lunar.Systems
+  syntax:
+    content: protected abstract void SyncTransform(GameObjectComponent gameObject, TransformComponent transform)
+    parameters:
+    - id: gameObject
+      type: Lunar.Components.GameObjectComponent
+    - id: transform
+      type: Lunar.Components.TransformComponent
+    content.vb: Protected MustOverride Sub SyncTransform(gameObject As GameObjectComponent, transform As TransformComponent)
+  overload: Lunar.Systems.GameObjectSyncSystemBase.SyncTransform*
+- uid: Lunar.Systems.GameObjectSyncSystemBase.SyncName(Lunar.Components.GameObjectComponent,Lunar.Components.NameComponent)
+  commentId: M:Lunar.Systems.GameObjectSyncSystemBase.SyncName(Lunar.Components.GameObjectComponent,Lunar.Components.NameComponent)
+  id: SyncName(Lunar.Components.GameObjectComponent,Lunar.Components.NameComponent)
+  parent: Lunar.Systems.GameObjectSyncSystemBase
+  langs:
+  - csharp
+  - vb
+  name: SyncName(GameObjectComponent, NameComponent)
+  nameWithType: GameObjectSyncSystemBase.SyncName(GameObjectComponent, NameComponent)
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.SyncName(Lunar.Components.GameObjectComponent, Lunar.Components.NameComponent)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Systems/GameObjectSyncSystemBase.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: SyncName
+    path: ../src/Lunar/Systems/GameObjectSyncSystemBase.cs
+    startLine: 12
+  assemblies:
+  - Lunar
+  namespace: Lunar.Systems
+  syntax:
+    content: protected abstract void SyncName(GameObjectComponent gameObject, NameComponent name)
+    parameters:
+    - id: gameObject
+      type: Lunar.Components.GameObjectComponent
+    - id: name
+      type: Lunar.Components.NameComponent
+    content.vb: Protected MustOverride Sub SyncName(gameObject As GameObjectComponent, name As NameComponent)
+  overload: Lunar.Systems.GameObjectSyncSystemBase.SyncName*
+- uid: Lunar.Systems.GameObjectSyncSystemBase.Update(System.Single@)
+  commentId: M:Lunar.Systems.GameObjectSyncSystemBase.Update(System.Single@)
+  id: Update(System.Single@)
+  parent: Lunar.Systems.GameObjectSyncSystemBase
+  langs:
+  - csharp
+  - vb
+  name: Update(in float)
+  nameWithType: GameObjectSyncSystemBase.Update(in float)
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.Update(in float)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Systems/GameObjectSyncSystemBase.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Update
+    path: ../src/Lunar/Systems/GameObjectSyncSystemBase.cs
+    startLine: 14
+  assemblies:
+  - Lunar
+  namespace: Lunar.Systems
+  syntax:
+    content: public override void Update(in float deltaTime)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public Overrides Sub Update(deltaTime As Single)
+  overload: Lunar.Systems.GameObjectSyncSystemBase.Update*
+  nameWithType.vb: GameObjectSyncSystemBase.Update(Single)
+  fullName.vb: Lunar.Systems.GameObjectSyncSystemBase.Update(Single)
+  name.vb: Update(Single)
+references:
+- uid: Lunar.Systems
+  commentId: N:Lunar.Systems
+  name: Lunar.Systems
+  nameWithType: Lunar.Systems
+  fullName: Lunar.Systems
+  spec.csharp:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Systems
+    name: Systems
+  spec.vb:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Systems
+    name: Systems
+- uid: System.Object
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lunar.Systems.GameObjectSyncSystemBase.#ctor*
+  commentId: Overload:Lunar.Systems.GameObjectSyncSystemBase.#ctor
+  name: GameObjectSyncSystemBase
+  nameWithType: GameObjectSyncSystemBase.GameObjectSyncSystemBase
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.GameObjectSyncSystemBase
+  nameWithType.vb: GameObjectSyncSystemBase.New
+  fullName.vb: Lunar.Systems.GameObjectSyncSystemBase.New
+  name.vb: New
+- uid: World
+  isExternal: true
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Lunar.Systems.GameObjectSyncSystemBase.SyncTransform*
+  commentId: Overload:Lunar.Systems.GameObjectSyncSystemBase.SyncTransform
+  name: SyncTransform
+  nameWithType: GameObjectSyncSystemBase.SyncTransform
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.SyncTransform
+- uid: Lunar.Components.GameObjectComponent
+  commentId: T:Lunar.Components.GameObjectComponent
+  parent: Lunar.Components
+  name: GameObjectComponent
+  nameWithType: GameObjectComponent
+  fullName: Lunar.Components.GameObjectComponent
+- uid: Lunar.Components.TransformComponent
+  commentId: T:Lunar.Components.TransformComponent
+  parent: Lunar.Components
+  name: TransformComponent
+  nameWithType: TransformComponent
+  fullName: Lunar.Components.TransformComponent
+- uid: Lunar.Components
+  commentId: N:Lunar.Components
+  name: Lunar.Components
+  nameWithType: Lunar.Components
+  fullName: Lunar.Components
+  spec.csharp:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Components
+    name: Components
+  spec.vb:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Components
+    name: Components
+- uid: Lunar.Systems.GameObjectSyncSystemBase.SyncName*
+  commentId: Overload:Lunar.Systems.GameObjectSyncSystemBase.SyncName
+  name: SyncName
+  nameWithType: GameObjectSyncSystemBase.SyncName
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.SyncName
+- uid: Lunar.Components.NameComponent
+  commentId: T:Lunar.Components.NameComponent
+  parent: Lunar.Components
+  name: NameComponent
+  nameWithType: NameComponent
+  fullName: Lunar.Components.NameComponent
+- uid: Lunar.Systems.GameObjectSyncSystemBase.Update*
+  commentId: Overload:Lunar.Systems.GameObjectSyncSystemBase.Update
+  name: Update
+  nameWithType: GameObjectSyncSystemBase.Update
+  fullName: Lunar.Systems.GameObjectSyncSystemBase.Update
+- uid: System.Single
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
