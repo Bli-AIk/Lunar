@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Interfaces.IResources
+  commentId: T:Lunar.Interfaces.IResources
+  id: IResources
+  parent: Lunar.Interfaces
+  children:
+  - Lunar.Interfaces.IResources.Load``1(System.String)
+  - Lunar.Interfaces.IResources.LoadAll``1(IEnumerable{System.String})
+  - Lunar.Interfaces.IResources.LoadAll``1(System.String)
+  - Lunar.Interfaces.IResources.Release``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: IResources
+  nameWithType: IResources
+  fullName: Lunar.Interfaces.IResources
+  type: Interface
+  source:
+    remote:
+      path: src/Lunar/Interfaces/IResources.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: IResources
+    path: ../src/Lunar/Interfaces/IResources.cs
+    startLine: 9
+  assemblies:
+  - Lunar
+  namespace: Lunar.Interfaces
+  summary: "\nResource system interface.\n"
+  example: []
+  syntax:
+    content: public interface IResources
+    content.vb: Public Interface IResources
+- uid: Lunar.Interfaces.IResources.Load``1(System.String)
+  commentId: M:Lunar.Interfaces.IResources.Load``1(System.String)
+  id: Load``1(System.String)
+  parent: Lunar.Interfaces.IResources
+  langs:
+  - csharp
+  - vb
+  name: Load<T>(string)
+  nameWithType: IResources.Load<T>(string)
+  fullName: Lunar.Interfaces.IResources.Load<T>(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Interfaces/IResources.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Load
+    path: ../src/Lunar/Interfaces/IResources.cs
+    startLine: 17
+  assemblies:
+  - Lunar
+  namespace: Lunar.Interfaces
+  summary: "\nLoading resources.\n"
+  example: []
+  syntax:
+    content: T Load<T>(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the resource
+    typeParameters:
+    - id: T
+      description: Resource type
+    return:
+      type: '{T}'
+      description: Resource
+    content.vb: Function Load(Of T)(path As String) As T
+  overload: Lunar.Interfaces.IResources.Load*
+  nameWithType.vb: IResources.Load(Of T)(String)
+  fullName.vb: Lunar.Interfaces.IResources.Load(Of T)(String)
+  name.vb: Load(Of T)(String)
+- uid: Lunar.Interfaces.IResources.LoadAll``1(System.String)
+  commentId: M:Lunar.Interfaces.IResources.LoadAll``1(System.String)
+  id: LoadAll``1(System.String)
+  parent: Lunar.Interfaces.IResources
+  langs:
+  - csharp
+  - vb
+  name: LoadAll<T>(string)
+  nameWithType: IResources.LoadAll<T>(string)
+  fullName: Lunar.Interfaces.IResources.LoadAll<T>(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Interfaces/IResources.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: LoadAll
+    path: ../src/Lunar/Interfaces/IResources.cs
+    startLine: 25
+  assemblies:
+  - Lunar
+  namespace: Lunar.Interfaces
+  summary: "\nLoading resources from folder path\n"
+  example: []
+  syntax:
+    content: IEnumerable<T> LoadAll<T>(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the folder
+    typeParameters:
+    - id: T
+      description: Resource type
+    return:
+      type: IEnumerable{{T}}
+      description: Resources
+    content.vb: Function LoadAll(Of T)(path As String) As IEnumerable(Of T)
+  overload: Lunar.Interfaces.IResources.LoadAll*
+  nameWithType.vb: IResources.LoadAll(Of T)(String)
+  fullName.vb: Lunar.Interfaces.IResources.LoadAll(Of T)(String)
+  name.vb: LoadAll(Of T)(String)
+- uid: Lunar.Interfaces.IResources.LoadAll``1(IEnumerable{System.String})
+  commentId: M:Lunar.Interfaces.IResources.LoadAll``1(IEnumerable{System.String})
+  id: LoadAll``1(IEnumerable{System.String})
+  parent: Lunar.Interfaces.IResources
+  langs:
+  - csharp
+  - vb
+  name: LoadAll<T>(IEnumerable<string>)
+  nameWithType: IResources.LoadAll<T>(IEnumerable<string>)
+  fullName: Lunar.Interfaces.IResources.LoadAll<T>(IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Interfaces/IResources.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: LoadAll
+    path: ../src/Lunar/Interfaces/IResources.cs
+    startLine: 33
+  assemblies:
+  - Lunar
+  namespace: Lunar.Interfaces
+  summary: "\nLoading resources from folder path\n"
+  example: []
+  syntax:
+    content: IEnumerable<T> LoadAll<T>(IEnumerable<string> paths)
+    parameters:
+    - id: paths
+      type: IEnumerable{System.String}
+      description: The paths to the resources
+    typeParameters:
+    - id: T
+      description: Resource type
+    return:
+      type: IEnumerable{{T}}
+      description: Resources
+    content.vb: Function LoadAll(Of T)(paths As IEnumerable(Of String)) As IEnumerable(Of T)
+  overload: Lunar.Interfaces.IResources.LoadAll*
+  nameWithType.vb: IResources.LoadAll(Of T)(IEnumerable(Of String))
+  fullName.vb: Lunar.Interfaces.IResources.LoadAll(Of T)(IEnumerable(Of String))
+  name.vb: LoadAll(Of T)(IEnumerable(Of String))
+- uid: Lunar.Interfaces.IResources.Release``1(``0)
+  commentId: M:Lunar.Interfaces.IResources.Release``1(``0)
+  id: Release``1(``0)
+  parent: Lunar.Interfaces.IResources
+  langs:
+  - csharp
+  - vb
+  name: Release<T>(T)
+  nameWithType: IResources.Release<T>(T)
+  fullName: Lunar.Interfaces.IResources.Release<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/Lunar/Interfaces/IResources.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Release
+    path: ../src/Lunar/Interfaces/IResources.cs
+    startLine: 41
+  assemblies:
+  - Lunar
+  namespace: Lunar.Interfaces
+  summary: "\nRelease resource.\n"
+  example: []
+  syntax:
+    content: void Release<T>(T resource)
+    parameters:
+    - id: resource
+      type: '{T}'
+      description: Resource
+    typeParameters:
+    - id: T
+      description: Resource type
+    content.vb: Sub Release(Of T)(resource As T)
+  overload: Lunar.Interfaces.IResources.Release*
+  nameWithType.vb: IResources.Release(Of T)(T)
+  fullName.vb: Lunar.Interfaces.IResources.Release(Of T)(T)
+  name.vb: Release(Of T)(T)
+references:
+- uid: Lunar.Interfaces
+  commentId: N:Lunar.Interfaces
+  name: Lunar.Interfaces
+  nameWithType: Lunar.Interfaces
+  fullName: Lunar.Interfaces
+  spec.csharp:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Interfaces
+    name: Interfaces
+  spec.vb:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Interfaces
+    name: Interfaces
+- uid: Lunar.Interfaces.IResources.Load*
+  commentId: Overload:Lunar.Interfaces.IResources.Load
+  name: Load
+  nameWithType: IResources.Load
+  fullName: Lunar.Interfaces.IResources.Load
+- uid: System.String
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Lunar.Interfaces.IResources.LoadAll*
+  commentId: Overload:Lunar.Interfaces.IResources.LoadAll
+  name: LoadAll
+  nameWithType: IResources.LoadAll
+  fullName: Lunar.Interfaces.IResources.LoadAll
+- uid: IEnumerable{{T}}
+  commentId: '!:IEnumerable{``0}'
+  definition: IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: IEnumerable{System.String}
+  commentId: '!:IEnumerable{System.String}'
+  definition: IEnumerable`1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Lunar.Interfaces.IResources.Release*
+  commentId: Overload:Lunar.Interfaces.IResources.Release
+  name: Release
+  nameWithType: IResources.Release
+  fullName: Lunar.Interfaces.IResources.Release

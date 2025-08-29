@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Components.TransformComponent
+  commentId: T:Lunar.Components.TransformComponent
+  id: TransformComponent
+  parent: Lunar.Components
+  children:
+  - Lunar.Components.TransformComponent.#ctor
+  - Lunar.Components.TransformComponent.#ctor(Vector3,Quaternion,Vector3)
+  - Lunar.Components.TransformComponent.#ctor(Vector3,Quaternion)
+  - Lunar.Components.TransformComponent.#ctor(Vector3,Vector3)
+  - Lunar.Components.TransformComponent.#ctor(Vector3)
+  - Lunar.Components.TransformComponent.Position
+  - Lunar.Components.TransformComponent.Rotation
+  - Lunar.Components.TransformComponent.Scale
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent
+  nameWithType: TransformComponent
+  fullName: Lunar.Components.TransformComponent
+  type: Struct
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: TransformComponent
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 4
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public struct TransformComponent
+    content.vb: Public Structure TransformComponent
+- uid: Lunar.Components.TransformComponent.Position
+  commentId: F:Lunar.Components.TransformComponent.Position
+  id: Position
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: TransformComponent.Position
+  fullName: Lunar.Components.TransformComponent.Position
+  type: Field
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Position
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 6
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public Vector3 Position
+    return:
+      type: Vector3
+    content.vb: Public Position As Vector3
+- uid: Lunar.Components.TransformComponent.Rotation
+  commentId: F:Lunar.Components.TransformComponent.Rotation
+  id: Rotation
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: TransformComponent.Rotation
+  fullName: Lunar.Components.TransformComponent.Rotation
+  type: Field
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Rotation
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 7
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public Quaternion Rotation
+    return:
+      type: Quaternion
+    content.vb: Public Rotation As Quaternion
+- uid: Lunar.Components.TransformComponent.Scale
+  commentId: F:Lunar.Components.TransformComponent.Scale
+  id: Scale
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: TransformComponent.Scale
+  fullName: Lunar.Components.TransformComponent.Scale
+  type: Field
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: Scale
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 8
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public Vector3 Scale
+    return:
+      type: Vector3
+    content.vb: Public Scale As Vector3
+- uid: Lunar.Components.TransformComponent.#ctor
+  commentId: M:Lunar.Components.TransformComponent.#ctor
+  id: '#ctor'
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent()
+  nameWithType: TransformComponent.TransformComponent()
+  fullName: Lunar.Components.TransformComponent.TransformComponent()
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 10
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public TransformComponent()
+    content.vb: Public Sub New()
+  overload: Lunar.Components.TransformComponent.#ctor*
+  nameWithType.vb: TransformComponent.New()
+  fullName.vb: Lunar.Components.TransformComponent.New()
+  name.vb: New()
+- uid: Lunar.Components.TransformComponent.#ctor(Vector3)
+  commentId: M:Lunar.Components.TransformComponent.#ctor(Vector3)
+  id: '#ctor(Vector3)'
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent(Vector3)
+  nameWithType: TransformComponent.TransformComponent(Vector3)
+  fullName: Lunar.Components.TransformComponent.TransformComponent(Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 13
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public TransformComponent(Vector3 position)
+    parameters:
+    - id: position
+      type: Vector3
+    content.vb: Public Sub New(position As Vector3)
+  overload: Lunar.Components.TransformComponent.#ctor*
+  nameWithType.vb: TransformComponent.New(Vector3)
+  fullName.vb: Lunar.Components.TransformComponent.New(Vector3)
+  name.vb: New(Vector3)
+- uid: Lunar.Components.TransformComponent.#ctor(Vector3,Quaternion)
+  commentId: M:Lunar.Components.TransformComponent.#ctor(Vector3,Quaternion)
+  id: '#ctor(Vector3,Quaternion)'
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent(Vector3, Quaternion)
+  nameWithType: TransformComponent.TransformComponent(Vector3, Quaternion)
+  fullName: Lunar.Components.TransformComponent.TransformComponent(Vector3, Quaternion)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 16
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public TransformComponent(Vector3 position, Quaternion rotation)
+    parameters:
+    - id: position
+      type: Vector3
+    - id: rotation
+      type: Quaternion
+    content.vb: Public Sub New(position As Vector3, rotation As Quaternion)
+  overload: Lunar.Components.TransformComponent.#ctor*
+  nameWithType.vb: TransformComponent.New(Vector3, Quaternion)
+  fullName.vb: Lunar.Components.TransformComponent.New(Vector3, Quaternion)
+  name.vb: New(Vector3, Quaternion)
+- uid: Lunar.Components.TransformComponent.#ctor(Vector3,Vector3)
+  commentId: M:Lunar.Components.TransformComponent.#ctor(Vector3,Vector3)
+  id: '#ctor(Vector3,Vector3)'
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent(Vector3, Vector3)
+  nameWithType: TransformComponent.TransformComponent(Vector3, Vector3)
+  fullName: Lunar.Components.TransformComponent.TransformComponent(Vector3, Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 19
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public TransformComponent(Vector3 position, Vector3 scale)
+    parameters:
+    - id: position
+      type: Vector3
+    - id: scale
+      type: Vector3
+    content.vb: Public Sub New(position As Vector3, scale As Vector3)
+  overload: Lunar.Components.TransformComponent.#ctor*
+  nameWithType.vb: TransformComponent.New(Vector3, Vector3)
+  fullName.vb: Lunar.Components.TransformComponent.New(Vector3, Vector3)
+  name.vb: New(Vector3, Vector3)
+- uid: Lunar.Components.TransformComponent.#ctor(Vector3,Quaternion,Vector3)
+  commentId: M:Lunar.Components.TransformComponent.#ctor(Vector3,Quaternion,Vector3)
+  id: '#ctor(Vector3,Quaternion,Vector3)'
+  parent: Lunar.Components.TransformComponent
+  langs:
+  - csharp
+  - vb
+  name: TransformComponent(Vector3, Quaternion, Vector3)
+  nameWithType: TransformComponent.TransformComponent(Vector3, Quaternion, Vector3)
+  fullName: Lunar.Components.TransformComponent.TransformComponent(Vector3, Quaternion, Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Components/TransformComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Components/TransformComponent.cs
+    startLine: 22
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public TransformComponent(Vector3 position, Quaternion rotation, Vector3 scale)
+    parameters:
+    - id: position
+      type: Vector3
+    - id: rotation
+      type: Quaternion
+    - id: scale
+      type: Vector3
+    content.vb: Public Sub New(position As Vector3, rotation As Quaternion, scale As Vector3)
+  overload: Lunar.Components.TransformComponent.#ctor*
+  nameWithType.vb: TransformComponent.New(Vector3, Quaternion, Vector3)
+  fullName.vb: Lunar.Components.TransformComponent.New(Vector3, Quaternion, Vector3)
+  name.vb: New(Vector3, Quaternion, Vector3)
+references:
+- uid: Lunar.Components
+  commentId: N:Lunar.Components
+  name: Lunar.Components
+  nameWithType: Lunar.Components
+  fullName: Lunar.Components
+  spec.csharp:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Components
+    name: Components
+  spec.vb:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Components
+    name: Components
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Quaternion
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Quaternion
+- uid: Lunar.Components.TransformComponent.#ctor*
+  commentId: Overload:Lunar.Components.TransformComponent.#ctor
+  name: TransformComponent
+  nameWithType: TransformComponent.TransformComponent
+  fullName: Lunar.Components.TransformComponent.TransformComponent
+  nameWithType.vb: TransformComponent.New
+  fullName.vb: Lunar.Components.TransformComponent.New
+  name.vb: New

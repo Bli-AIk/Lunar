@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Components.GameObjectComponent
+  commentId: T:Lunar.Components.GameObjectComponent
+  id: GameObjectComponent
+  parent: Lunar.Components
+  children:
+  - Lunar.Components.GameObjectComponent.#ctor(Lunar.GameObject)
+  - Lunar.Components.GameObjectComponent.GameObject
+  langs:
+  - csharp
+  - vb
+  name: GameObjectComponent
+  nameWithType: GameObjectComponent
+  fullName: Lunar.Components.GameObjectComponent
+  type: Struct
+  source:
+    remote:
+      path: src/Lunar/Components/GameObjectComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: GameObjectComponent
+    path: ../src/Lunar/Components/GameObjectComponent.cs
+    startLine: 2
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public struct GameObjectComponent
+    content.vb: Public Structure GameObjectComponent
+- uid: Lunar.Components.GameObjectComponent.#ctor(Lunar.GameObject)
+  commentId: M:Lunar.Components.GameObjectComponent.#ctor(Lunar.GameObject)
+  id: '#ctor(Lunar.GameObject)'
+  parent: Lunar.Components.GameObjectComponent
+  langs:
+  - csharp
+  - vb
+  name: GameObjectComponent(GameObject)
+  nameWithType: GameObjectComponent.GameObjectComponent(GameObject)
+  fullName: Lunar.Components.GameObjectComponent.GameObjectComponent(Lunar.GameObject)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lunar/Components/GameObjectComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: .ctor
+    path: ../src/Lunar/Components/GameObjectComponent.cs
+    startLine: 4
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public GameObjectComponent(GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: Lunar.GameObject
+    content.vb: Public Sub New(gameObject As GameObject)
+  overload: Lunar.Components.GameObjectComponent.#ctor*
+  nameWithType.vb: GameObjectComponent.New(GameObject)
+  fullName.vb: Lunar.Components.GameObjectComponent.New(Lunar.GameObject)
+  name.vb: New(GameObject)
+- uid: Lunar.Components.GameObjectComponent.GameObject
+  commentId: F:Lunar.Components.GameObjectComponent.GameObject
+  id: GameObject
+  parent: Lunar.Components.GameObjectComponent
+  langs:
+  - csharp
+  - vb
+  name: GameObject
+  nameWithType: GameObjectComponent.GameObject
+  fullName: Lunar.Components.GameObjectComponent.GameObject
+  type: Field
+  source:
+    remote:
+      path: src/Lunar/Components/GameObjectComponent.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
+    id: GameObject
+    path: ../src/Lunar/Components/GameObjectComponent.cs
+    startLine: 9
+  assemblies:
+  - Lunar
+  namespace: Lunar.Components
+  syntax:
+    content: public GameObject GameObject
+    return:
+      type: Lunar.GameObject
+    content.vb: Public GameObject As GameObject
+references:
+- uid: Lunar.Components
+  commentId: N:Lunar.Components
+  name: Lunar.Components
+  nameWithType: Lunar.Components
+  fullName: Lunar.Components
+  spec.csharp:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Components
+    name: Components
+  spec.vb:
+  - uid: Lunar
+    name: Lunar
+  - name: .
+  - uid: Lunar.Components
+    name: Components
+- uid: Lunar.Components.GameObjectComponent.#ctor*
+  commentId: Overload:Lunar.Components.GameObjectComponent.#ctor
+  name: GameObjectComponent
+  nameWithType: GameObjectComponent.GameObjectComponent
+  fullName: Lunar.Components.GameObjectComponent.GameObjectComponent
+  nameWithType.vb: GameObjectComponent.New
+  fullName.vb: Lunar.Components.GameObjectComponent.New
+  name.vb: New
+- uid: Lunar.GameObject
+  commentId: T:Lunar.GameObject
+  parent: Lunar
+  name: GameObject
+  nameWithType: GameObject
+  fullName: Lunar.GameObject
+- uid: Lunar
+  commentId: N:Lunar
+  name: Lunar
+  nameWithType: Lunar
+  fullName: Lunar

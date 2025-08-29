@@ -18,8 +18,12 @@ items:
   fullName: Lunar.Modules.TypeWriter.State
   type: Enum
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: State
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 7
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -39,8 +43,12 @@ items:
   fullName: Lunar.Modules.TypeWriter.State.Idle
   type: Field
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Idle
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 9
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -61,8 +69,12 @@ items:
   fullName: Lunar.Modules.TypeWriter.State.Playing
   type: Field
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Playing
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 10
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -83,8 +95,12 @@ items:
   fullName: Lunar.Modules.TypeWriter.State.Paused
   type: Field
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Paused
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 11
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -105,8 +121,12 @@ items:
   fullName: Lunar.Modules.TypeWriter.State.Cancelled
   type: Field
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Cancelled
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 12
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -127,8 +147,12 @@ items:
   fullName: Lunar.Modules.TypeWriter.State.Finished
   type: Field
   source:
+    remote:
+      path: src/Lunar.Modules.TypeWriter/TypeWriter.cs
+      branch: main
+      repo: git@github.com:Bli-AIk/Lunar.git
     id: Finished
-    path: /home/aik/Projects/UnityProjects/Lunar-Original/Lunar/src/Lunar.Modules.TypeWriter/TypeWriter.cs
+    path: ../src/Lunar.Modules.TypeWriter/TypeWriter.cs
     startLine: 13
   assemblies:
   - Lunar.Modules.TypeWriter
@@ -140,38 +164,30 @@ items:
 references:
 - uid: Lunar.Modules.TypeWriter
   commentId: N:Lunar.Modules.TypeWriter
-  href: Lunar.html
   name: Lunar.Modules.TypeWriter
   nameWithType: Lunar.Modules.TypeWriter
   fullName: Lunar.Modules.TypeWriter
   spec.csharp:
   - uid: Lunar
     name: Lunar
-    href: Lunar.html
   - name: .
   - uid: Lunar.Modules
     name: Modules
-    href: Lunar.Modules.html
   - name: .
   - uid: Lunar.Modules.TypeWriter
     name: TypeWriter
-    href: Lunar.Modules.TypeWriter.html
   spec.vb:
   - uid: Lunar
     name: Lunar
-    href: Lunar.html
   - name: .
   - uid: Lunar.Modules
     name: Modules
-    href: Lunar.Modules.html
   - name: .
   - uid: Lunar.Modules.TypeWriter
     name: TypeWriter
-    href: Lunar.Modules.TypeWriter.html
 - uid: Lunar.Modules.TypeWriter.State
   commentId: T:Lunar.Modules.TypeWriter.State
   parent: Lunar.Modules.TypeWriter
-  href: Lunar.Modules.TypeWriter.State.html
   name: State
   nameWithType: State
   fullName: Lunar.Modules.TypeWriter.State

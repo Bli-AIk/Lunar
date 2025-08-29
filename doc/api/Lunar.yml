@@ -4,7 +4,10 @@ items:
   commentId: N:Lunar
   id: Lunar
   children:
-  - Lunar.Class1
+  - Lunar.GameControllerBase
+  - Lunar.GameObject
+  - Lunar.KeyCode
+  - Lunar.Sprite
   langs:
   - csharp
   - vb
@@ -15,9 +18,31 @@ items:
   assemblies:
   - Lunar
 references:
-- uid: Lunar.Class1
-  commentId: T:Lunar.Class1
-  href: Lunar.Class1.html
-  name: Class1
-  nameWithType: Class1
-  fullName: Lunar.Class1
+- uid: Lunar.GameControllerBase
+  commentId: T:Lunar.GameControllerBase
+  name: GameControllerBase
+  nameWithType: GameControllerBase
+  fullName: Lunar.GameControllerBase
+- uid: Lunar.GameObject
+  commentId: T:Lunar.GameObject
+  parent: Lunar
+  name: GameObject
+  nameWithType: GameObject
+  fullName: Lunar.GameObject
+- uid: Lunar.KeyCode
+  commentId: T:Lunar.KeyCode
+  parent: Lunar
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: Lunar.KeyCode
+- uid: Lunar.Sprite
+  commentId: T:Lunar.Sprite
+  parent: Lunar
+  name: Sprite
+  nameWithType: Sprite
+  fullName: Lunar.Sprite
+- uid: Lunar
+  commentId: N:Lunar
+  name: Lunar
+  nameWithType: Lunar
+  fullName: Lunar
