@@ -7,11 +7,11 @@ namespace Lunar.Core.Base.Interfaces;
 /// </summary>
 public interface IInput
 {
-    bool GetKeyDown(KeyCodeBase keycode);
+    bool GetKeyDown(KeyCodeHandle keycode);
 
-    bool GetKey(KeyCodeBase keycode);
+    bool GetKey(KeyCodeHandle keycode);
 
-    bool GetKeyUp(KeyCodeBase keycode);
+    bool GetKeyUp(KeyCodeHandle keycode);
 }
 
 /// <summary>
@@ -19,7 +19,7 @@ public interface IInput
 /// </summary>
 public interface IInputActions
 {
-    Dictionary<string, KeyCodeBase[]> Bindings { get; }
+    Dictionary<string, KeyCodeHandle[]> Bindings { get; }
     IInput Input { get; }
 
     /// <summary>
@@ -28,7 +28,7 @@ public interface IInputActions
     /// <param name="action">Logical action name (e.g. "Jump").</param>
     /// <param name="keys">One or more physical keys to bind.</param>
     /// <returns>True if the binding is set successfully, false otherwise.</returns>
-    bool SetBinding(string action, params KeyCodeBase[] keys);
+    bool SetBinding(string action, params KeyCodeHandle[] keys);
 
     /// <summary>
     ///     Remove the binding for a given action.

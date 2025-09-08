@@ -13,7 +13,7 @@ public struct SpriteComponent
     }
 
     public string Path;
-    public SpriteBase? Sprite;
+    public SpriteHandle? Sprite;
     public string? LastLoadPath { get; private set; }
 
     public void SetLastLoadPath(string? lastLoadPath)
