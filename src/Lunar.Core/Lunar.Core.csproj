@@ -2,9 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <PackageId>Lunar</PackageId>
+        <PackageId>Lunar.Core</PackageId>
         <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
+        <AssemblyName>Lunar.Core</AssemblyName>
+        <RootNamespace>Lunar.Core</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

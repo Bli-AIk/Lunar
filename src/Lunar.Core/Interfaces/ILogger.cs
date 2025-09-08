@@ -1,4 +1,4 @@
-namespace Lunar.Interfaces;
+namespace Lunar.Core.Interfaces;
 
 public interface ILogger
 {

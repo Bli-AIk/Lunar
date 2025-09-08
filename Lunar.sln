@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar", "src\Lunar\Lunar.csproj", "{43B57559-7EA4-4CA5-8DEA-00B2669356B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar.Core", "src\Lunar.Core\Lunar.Core.csproj", "{43B57559-7EA4-4CA5-8DEA-00B2669356B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar.Modules.TypeWriter", "src\Lunar.Modules.TypeWriter\Lunar.Modules.TypeWriter.csproj", "{904BC4CE-8510-44FE-958B-3C96F9E4608B}"
 EndProject

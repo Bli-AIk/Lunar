@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Lunar.Interfaces;
+namespace Lunar.Core.Interfaces;
 
 /// <summary>
 ///     Resource system interface.
