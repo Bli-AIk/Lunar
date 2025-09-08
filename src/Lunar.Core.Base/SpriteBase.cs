@@ -2,9 +2,9 @@ using System;
 
 namespace Lunar.Core.Base;
 
-public class Sprite
+public class SpriteBase
 {
-    public Sprite(object baseSprite)
+    public SpriteBase(object baseSprite)
     {
         BaseSprite = baseSprite ?? throw new ArgumentNullException(nameof(baseSprite));
     }

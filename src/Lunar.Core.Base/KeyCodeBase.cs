@@ -1,6 +1,6 @@
 namespace Lunar.Core.Base;
 
-public enum KeyCode
+public enum KeyCodeBase
 {
     /// <summary>
     ///     <para>Not assigned (never returned as the result of a keystroke).</para>
