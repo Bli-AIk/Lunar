@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Lunar.Core.Base;
 
-namespace Lunar.Core.ECS.Interfaces;
+namespace Lunar.Core.Base.Interfaces;
 
 /// <summary>
 ///     Basic input interface.
