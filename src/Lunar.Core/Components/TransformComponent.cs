@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace Lunar.Components;
+namespace Lunar.Core.Components;
 
 public struct TransformComponent
 {

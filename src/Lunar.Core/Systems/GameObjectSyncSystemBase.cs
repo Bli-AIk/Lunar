@@ -1,9 +1,9 @@
 using Arch.Core;
 using Arch.Core.Extensions;
 using Arch.System;
-using Lunar.Components;
+using Lunar.Core.Components;
 
-namespace Lunar.Systems;
+namespace Lunar.Core.Systems;
 
 public abstract class GameObjectSyncSystemBase : BaseSystem<World, float>
 {

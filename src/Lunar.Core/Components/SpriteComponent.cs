@@ -1,6 +1,4 @@
-using System.ComponentModel;
-
-namespace Lunar.Components;
+namespace Lunar.Core.Components;
 
 public struct SpriteComponent
 {

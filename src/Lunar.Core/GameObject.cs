@@ -1,6 +1,6 @@
 using System;
 
-namespace Lunar;
+namespace Lunar.Core;
 
 public class GameObject
 {
