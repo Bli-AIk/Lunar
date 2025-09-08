@@ -1,4 +1,6 @@
-namespace Lunar.Core.Components;
+using Lunar.Core.Base;
+
+namespace Lunar.Core.ECS.Components;
 
 public struct SpriteComponent
 {

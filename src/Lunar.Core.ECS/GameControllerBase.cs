@@ -1,7 +1,7 @@
 using Arch.Core;
 using Arch.System;
 
-namespace Lunar.Core;
+namespace Lunar.Core.ECS;
 
 public abstract class GameControllerBase
 {

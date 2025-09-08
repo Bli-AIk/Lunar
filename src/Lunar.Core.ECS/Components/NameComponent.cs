@@ -1,4 +1,4 @@
-namespace Lunar.Core.Components;
+namespace Lunar.Core.ECS.Components;
 
 public struct NameComponent
 {

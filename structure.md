@@ -2,15 +2,19 @@
 
 ---
 
-### Lunar.Core
+### Lunar.Core.Base
+Core.Base 是 Lunar 对游戏引擎类的抽象——实现跨引擎的基础。
+
+**不依赖于任何外部库。**
+
+### Lunar.Core.ECS
+Core.ECS 是 Lunar 基于 ArchECS 提供的一套ECS实现的基类。
+
 **仅依赖于 ArchECS。**
 
-- Abstractions: “类型层面”的抽象（枚举、常量、值对象...)
-- ECS: 对ArchECS的轻度封装
-- (opt)Resources: 内存/文件系统的最小实现
-- (opt)Utilities: 工具
-- Interfaces: 行为服务（桥接、工厂、资源加载...）接口
-- Internal: 私有实现细节（可能经常变动、不适合暴露）
+- Components: 定义基础组件类型。
+- Interfaces: 行为服务接口。
+- Systems: 定义 ECS 中的 System 基类。
 
 ### Lunar.Modules
 模块应只做一件事情，且模块非单例。
@@ -19,18 +23,21 @@
 
 **仅依赖于 Core。**
 
-- 通用结构
-  - API: 对外公开的接口、数据结构、入口类
-  - Core: 全部可复用的纯业务逻辑
-  - Internal: 私有实现细节（可能经常变动、不适合暴露）
 - TypeWriter
 - Item
 - ...
+
+#### 通用结构
+  - API: 对外公开的接口、数据结构、入口类
+  - Core: 全部可复用的纯业务逻辑
+  - Internal: 私有实现细节（可能经常变动、不适合暴露）
+
 ### Lunar.Adapters.Unity
+Unity Engine 的桥接库。
+
 **仅依赖于 Core 与 Unity API。**
 
-- Components
-  - ECS: 对于ECS的封装（实体转化）
-  - Common:  可复用的 MonoBehaviours（事件转发、生命周期）
-- Resources: 资源、AB包等
+- Adapters: 对 Core.ECS.Interfaces 的具体实现
+- Systems: 对 Core.ECS.System 的具体实现
+- Utils: 静态实用方法
 - (opt)Editors
