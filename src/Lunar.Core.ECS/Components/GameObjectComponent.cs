@@ -4,10 +4,10 @@ namespace Lunar.Core.ECS.Components;
 
 public struct GameObjectComponent
 {
-    public GameObjectComponent(GameObjectBase gameObjectBase)
+    public GameObjectComponent(GameObjectHandle gameObjectHandle)
     {
-        GameObjectBase = gameObjectBase;
+        GameObjectHandle = gameObjectHandle;
     }
 
-    public GameObjectBase GameObjectBase;
+    public GameObjectHandle GameObjectHandle;
 }
