@@ -24,22 +24,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "$ACTIONS_SSH_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true 
+          token: ${{ secrets.MY_PAT }} 
+      
       - name: Dotnet Setup
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.x
-
-      - run: git submodule update --init --recursive
+      
       - run: dotnet tool update -g docfx
       - run: docfx doc/docfx.json
 
