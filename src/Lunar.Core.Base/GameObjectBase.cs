@@ -2,9 +2,9 @@ using System;
 
 namespace Lunar.Core.Base;
 
-public class GameObject
+public class GameObjectBase
 {
-    public GameObject(object baseGameObject)
+    public GameObjectBase(object baseGameObject)
     {
         BaseGameObject = baseGameObject ?? throw new ArgumentNullException(nameof(baseGameObject));
     }
