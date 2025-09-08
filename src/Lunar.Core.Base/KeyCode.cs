@@ -1,4 +1,4 @@
-namespace Lunar.Core;
+namespace Lunar.Core.Base;
 
 public enum KeyCode
 {
