@@ -31,6 +31,7 @@ jobs:
         with:
           dotnet-version: 8.x
 
+      - run: git submodule update --init --recursive
       - run: dotnet tool update -g docfx
       - run: docfx doc/docfx.json
 
