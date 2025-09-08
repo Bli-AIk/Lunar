@@ -1,6 +1,6 @@
 using System;
 
-namespace Lunar.Core;
+namespace Lunar.Core.Base;
 
 public class Sprite
 {

@@ -3,9 +3,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Arch.Core;
 using Arch.System;
-using Lunar.Core.Components;
+using Lunar.Core.ECS.Components;
 
-namespace Lunar.Core.Systems;
+namespace Lunar.Core.ECS.Systems;
 
 public abstract class SpriteSyncSystemBase : BaseSystem<World, float>
 {
