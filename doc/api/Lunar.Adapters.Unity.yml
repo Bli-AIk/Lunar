@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lunar.Adapters.Unity
+  commentId: N:Lunar.Adapters.Unity
+  id: Lunar.Adapters.Unity
+  children:
+  - Lunar.Adapters.Unity.Class1
+  langs:
+  - csharp
+  - vb
+  name: Lunar.Adapters.Unity
+  nameWithType: Lunar.Adapters.Unity
+  fullName: Lunar.Adapters.Unity
+  type: Namespace
+  assemblies:
+  - Lunar.Adapters.Unity
+references:
+- uid: Lunar.Adapters.Unity.Class1
+  commentId: T:Lunar.Adapters.Unity.Class1
+  href: Lunar.Adapters.Unity.Class1.html
+  name: Class1
+  nameWithType: Class1
+  fullName: Lunar.Adapters.Unity.Class1
