@@ -3,237 +3,236 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Lunar.Modules.TypeWriter
+namespace Lunar.Modules.TypeWriter;
+
+public enum State
 {
-    public enum State
+    Idle,
+    Playing,
+    Paused,
+    Cancelled,
+    Finished
+}
+
+public partial class TypeWriter
+{
+    private readonly StringBuilder _builder = new();
+    private readonly TimeSpan _delay;
+    private readonly object _lock = new();
+    private CancellationTokenSource? _internalCts;
+    private string _sourceText;
+
+
+    public TypeWriter(string sourceText, TimeSpan delay)
     {
-        Idle,
-        Playing,
-        Paused,
-        Cancelled,
-        Finished
+        _sourceText = sourceText ?? throw new ArgumentNullException(nameof(sourceText));
+        _delay = delay;
+        State = State.Idle;
     }
 
-    public partial class TypeWriter
+    /// <summary>
+    ///     Current status of typewriter. (read-only)
+    /// </summary>
+    public State State { get; private set; }
+
+    /// <summary>
+    ///     The results of the text. (read-only)
+    /// </summary>
+    public string ResultText
     {
-        private readonly StringBuilder _builder = new();
-        private readonly TimeSpan _delay;
-        private readonly object _lock = new();
-        private CancellationTokenSource? _internalCts;
-        private string _sourceText;
-
-
-        public TypeWriter(string sourceText, TimeSpan delay)
+        get
         {
-            _sourceText = sourceText ?? throw new ArgumentNullException(nameof(sourceText));
-            _delay = delay;
-            State = State.Idle;
-        }
-
-        /// <summary>
-        ///     Current status of typewriter. (read-only)
-        /// </summary>
-        public State State { get; private set; }
-
-        /// <summary>
-        ///     The results of the text. (read-only)
-        /// </summary>
-        public string ResultText
-        {
-            get
+            lock (_lock)
             {
-                lock (_lock)
-                {
-                    return _builder.ToString();
-                }
+                return _builder.ToString();
             }
         }
+    }
 
-        public async Task StartAsync(string sourceText, bool isForce = true, CancellationToken token = default)
+    public async Task StartAsync(string sourceText, bool isForce = true, CancellationToken token = default)
+    {
+        _sourceText = sourceText;
+        await StartAsync(isForce, token);
+    }
+
+    /// <summary>
+    ///     Start the TypeWriter.
+    /// </summary>
+    public async Task StartAsync(bool isForce = true, CancellationToken token = default)
+    {
+        CancellationTokenSource newCts;
+
+        lock (_lock)
         {
-            _sourceText = sourceText;
-            await StartAsync(isForce, token);
+            if (!isForce && (IsPlaying || IsPaused))
+            {
+                return;
+            }
+
+            _internalCts?.Cancel();
+            _internalCts?.Dispose();
+
+            newCts = CancellationTokenSource.CreateLinkedTokenSource(token);
+            _internalCts = newCts;
+            _builder.Clear();
+            State = State.Playing;
         }
 
-        /// <summary>
-        ///     Start the TypeWriter.
-        /// </summary>
-        public async Task StartAsync(bool isForce = true, CancellationToken token = default)
+        try
         {
-            CancellationTokenSource newCts;
+            await Update(newCts).ConfigureAwait(false);
 
             lock (_lock)
             {
-                if (!isForce && (IsPlaying || IsPaused))
+                if (_internalCts == newCts && State != State.Cancelled)
                 {
-                    return;
-                }
-
-                _internalCts?.Cancel();
-                _internalCts?.Dispose();
-
-                newCts = CancellationTokenSource.CreateLinkedTokenSource(token);
-                _internalCts = newCts;
-                _builder.Clear();
-                State = State.Playing;
-            }
-
-            try
-            {
-                await Update(newCts).ConfigureAwait(false);
-
-                lock (_lock)
-                {
-                    if (_internalCts == newCts && State != State.Cancelled)
-                    {
-                        State = State.Finished;
-                    }
-                }
-            }
-            finally
-            {
-                lock (_lock)
-                {
-                    if (_internalCts == newCts)
-                    {
-                        _internalCts?.Dispose();
-                        _internalCts = null;
-                    }
+                    State = State.Finished;
                 }
             }
         }
-
-        private async Task Update(CancellationTokenSource localCts)
+        finally
         {
-            try
+            lock (_lock)
             {
-                await UpdateTypewriter(localCts.Token);
-            }
-            catch (OperationCanceledException)
-            {
-                lock (_lock)
+                if (_internalCts == newCts)
                 {
-                    if (_internalCts == localCts)
-                    {
-                        State = State.Cancelled;
-                    }
+                    _internalCts?.Dispose();
+                    _internalCts = null;
                 }
             }
         }
+    }
 
-        private async Task UpdateTypewriter(CancellationToken token)
+    private async Task Update(CancellationTokenSource localCts)
+    {
+        try
         {
-            foreach (var t in _sourceText)
+            await UpdateTypewriter(localCts.Token);
+        }
+        catch (OperationCanceledException)
+        {
+            lock (_lock)
+            {
+                if (_internalCts == localCts)
+                {
+                    State = State.Cancelled;
+                }
+            }
+        }
+    }
+
+    private async Task UpdateTypewriter(CancellationToken token)
+    {
+        foreach (var t in _sourceText)
+        {
+            token.ThrowIfCancellationRequested();
+
+            while (IsPaused)
             {
                 token.ThrowIfCancellationRequested();
-
-                while (IsPaused)
-                {
-                    token.ThrowIfCancellationRequested();
-                    await Task.Delay(50, token).ConfigureAwait(false);
-                }
-
-                lock (_lock)
-                {
-                    _builder.Append(t);
-                }
-
-                await Task.Delay(_delay, token).ConfigureAwait(false);
+                await Task.Delay(50, token).ConfigureAwait(false);
             }
+
+            lock (_lock)
+            {
+                _builder.Append(t);
+            }
+
+            await Task.Delay(_delay, token).ConfigureAwait(false);
+        }
+    }
+
+    /// <summary>
+    ///     Pause the TypeWriter.
+    /// </summary>
+    public void Pause()
+    {
+        if (State != State.Playing)
+        {
+            return;
         }
 
-        /// <summary>
-        ///     Pause the TypeWriter.
-        /// </summary>
-        public void Pause()
+        lock (_lock)
         {
-            if (State != State.Playing)
+            State = State.Paused;
+        }
+    }
+
+    /// <summary>
+    ///     Resume the TypeWriter.
+    /// </summary>
+    public void Resume()
+    {
+        if (State != State.Paused)
+        {
+            return;
+        }
+
+        lock (_lock)
+        {
+            State = State.Playing;
+        }
+    }
+
+    /// <summary>
+    ///     Cancel the TypeWriter.
+    /// </summary>
+    public void Cancel()
+    {
+        lock (_lock)
+        {
+            if (State is State.Idle or State.Finished or State.Cancelled)
             {
                 return;
             }
 
-            lock (_lock)
-            {
-                State = State.Paused;
-            }
+            State = State.Cancelled;
+
+            _internalCts?.Cancel();
         }
+    }
+}
 
-        /// <summary>
-        ///     Resume the TypeWriter.
-        /// </summary>
-        public void Resume()
-        {
-            if (State != State.Paused)
-            {
-                return;
-            }
-
-            lock (_lock)
-            {
-                State = State.Playing;
-            }
-        }
-
-        /// <summary>
-        ///     Cancel the TypeWriter.
-        /// </summary>
-        public void Cancel()
+public partial class TypeWriter
+{
+    /// <summary>
+    ///     Is the typewriter playing? (read-only)
+    /// </summary>
+    public bool IsPlaying
+    {
+        get
         {
             lock (_lock)
             {
-                if (State is State.Idle or State.Finished or State.Cancelled)
-                {
-                    return;
-                }
-
-                State = State.Cancelled;
-
-                _internalCts?.Cancel();
+                return State == State.Playing;
             }
         }
     }
 
-    public partial class TypeWriter
+    /// <summary>
+    ///     Is the typewriter paused? (read-only)
+    /// </summary>
+    public bool IsPaused
     {
-        /// <summary>
-        ///     Is the typewriter playing? (read-only)
-        /// </summary>
-        public bool IsPlaying
+        get
         {
-            get
+            lock (_lock)
             {
-                lock (_lock)
-                {
-                    return State == State.Playing;
-                }
+                return State == State.Paused;
             }
         }
+    }
 
-        /// <summary>
-        ///     Is the typewriter paused? (read-only)
-        /// </summary>
-        public bool IsPaused
+    /// <summary>
+    ///     Is the typewriter cancelled? (read-only)
+    /// </summary>
+    public bool IsCancelled
+    {
+        get
         {
-            get
+            lock (_lock)
             {
-                lock (_lock)
-                {
-                    return State == State.Paused;
-                }
-            }
-        }
-
-        /// <summary>
-        ///     Is the typewriter cancelled? (read-only)
-        /// </summary>
-        public bool IsCancelled
-        {
-            get
-            {
-                lock (_lock)
-                {
-                    return State == State.Cancelled;
-                }
+                return State == State.Cancelled;
             }
         }
     }
