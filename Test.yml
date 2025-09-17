@@ -1,0 +1,14 @@
+"$schema": "https://raw.githubusercontent.com/Bli-AIk/Lunar/refs/heads/main/LunarDialogueSchema.json"
+
+Text1:
+  text: This is a Text
+  config:
+    - index: 1
+      event: SetSound_default
+    - index: 6
+      event: SetAnimation_idle
+    - index: 11
+      event: SetColor_red
+
+Text2:
+  text: This is a Text

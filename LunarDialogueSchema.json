@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lunar.bliaik.com/LunarDialogueSchema.json",
+  "type": "object",
+  "patternProperties": {
+    "^(?!\\$).*$": {
+      "type": "string"
+    },
+    "^.*$": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "config": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer"
+              },
+              "event": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "event"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
