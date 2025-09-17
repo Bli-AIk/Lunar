@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <PackageId>Lunar.Core.ECS</PackageId>
+        <LangVersion>10</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Arch-Events" Version="2.1.0"/>
+        <PackageReference Include="Arch.System" Version="1.1.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lunar.Core.Base\Lunar.Core.Base.csproj" />
+    </ItemGroup>
+
+</Project>

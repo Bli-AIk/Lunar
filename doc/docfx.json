@@ -34,7 +34,7 @@
     "output": "_site",
     "template": [
       "default",
-      "templates/unity"
+      "styles"
     ],
     "postProcessors": ["ExtractSearchIndex"],
     "globalMetadata": {

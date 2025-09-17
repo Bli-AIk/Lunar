@@ -1,0 +1,27 @@
+<nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" onclick="toggleSidenav()">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    {{>partials/logo}}
+    <p class="navbar-title">{{docTitle}}</p>
+  </div>
+  <div class="navbar-collapse" id="navbar">
+    <div class="navbar-hyper" onclick="window.open('{{navWebsiteUrl}}', '_blank').focus();">
+      <div class="navhyper-angle"></div>
+      <div class="navhyper-link">
+        <a href="{{navWebsiteUrl}}" target="_blank">{{navWebsiteName}}</a>
+        <img src="{{_rel}}styles/icons/right-arrow.svg">
+      </div>
+    </div>
+    <form class="navbar-form navbar-right" role="search" id="search">
+      <div class="search-angle"></div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="search-query" placeholder="{{__global.search}}" autocomplete="off">
+        <img class="search-icon" src="{{_rel}}styles/icons/search.svg">
+      </div>
+    </form>
+  </div>
+</nav>
