@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar", "src\Lunar\Lunar.csproj", "{43B57559-7EA4-4CA5-8DEA-00B2669356B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar.Adapters.Unity", "src\Lunar.Adapters.Unity\Lunar.Adapters.Unity.csproj", "{C4E68F4E-5FA1-404F-96B4-E59DAD4AC0B0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar.Modules.TypeWriter", "src\Lunar.Modules.TypeWriter\Lunar.Modules.TypeWriter.csproj", "{904BC4CE-8510-44FE-958B-3C96F9E4608B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunar.Modules.TypeWriter.Test", "src\Lunar.Modules.TypeWriter.Test\Lunar.Modules.TypeWriter.Test.csproj", "{FC8C806C-6366-4A7D-A8E4-A1D9BA1CC6C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,13 +22,13 @@ Global
 		{43B57559-7EA4-4CA5-8DEA-00B2669356B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43B57559-7EA4-4CA5-8DEA-00B2669356B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43B57559-7EA4-4CA5-8DEA-00B2669356B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4E68F4E-5FA1-404F-96B4-E59DAD4AC0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4E68F4E-5FA1-404F-96B4-E59DAD4AC0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4E68F4E-5FA1-404F-96B4-E59DAD4AC0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4E68F4E-5FA1-404F-96B4-E59DAD4AC0B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{904BC4CE-8510-44FE-958B-3C96F9E4608B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{904BC4CE-8510-44FE-958B-3C96F9E4608B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{904BC4CE-8510-44FE-958B-3C96F9E4608B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{904BC4CE-8510-44FE-958B-3C96F9E4608B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8C806C-6366-4A7D-A8E4-A1D9BA1CC6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8C806C-6366-4A7D-A8E4-A1D9BA1CC6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8C806C-6366-4A7D-A8E4-A1D9BA1CC6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8C806C-6366-4A7D-A8E4-A1D9BA1CC6C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
