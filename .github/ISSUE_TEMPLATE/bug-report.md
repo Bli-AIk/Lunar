@@ -1,29 +1,67 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: 'fix: Main content of BUG'
+about: Report a bug or unexpected behavior in the C# library
+title: 'bug: [Short description]'
 labels: bug
 assignees: ''
 
 ---
 
-**Problem Description**  
-Provide a clear and concise description of the problem and explain how it manifests in the project.  
+### 🐛 Problem Description
+Provide a clear description of the issue. Include:
+- Library name and version (NuGet package or project)
+- Type of issue: compile-time / runtime / unexpected behavior
+- Short code snippet showing the context (optional, but helpful)
 
-**Steps to Reproduce**  
-List the steps to trigger the issue:  
+---
 
-1. Does the issue occur in a game scene or in the Unity Editor?  
-2. If it's in a game scene, which scene? If it's in the Editor, which Editor window?  
-3. What actions did you perform? (e.g., used the interact button on an object, or attempted an operation in the Editor that didn't work?)  
-4. What specific operation triggered the issue? (e.g., moving the character, triggering an event, etc.)  
-5. What was the observed issue? (e.g., dialogue froze or content didn’t display as expected.)  
+### 📝 Steps to Reproduce
+Provide a minimal, self-contained example:
 
-**Expected Result**  
-Briefly explain the expected behavior in the project.  
+```csharp
+// Minimal reproducible example
+using MyLibrary;
 
-**Screenshots or Videos**  
-If possible, include screenshots or recordings to visually demonstrate the problem (this can include console logs or error messages).  
+class Program
+{
+    static void Main()
+    {
+        var obj = new Foo();
+        obj.Bar(null); // Example of problematic call
+    }
+}
+````
 
-**Additional Information**  
-Provide any other relevant background information related to the issue.  
+1. Which **class** and **method** did you call? What **parameters** did you pass?
+2. Operating system and .NET runtime version (e.g., Windows 11, .NET 8.0)
+3. How did you **install** and **reference** the library? (NuGet, version number, local reference, etc.)
+
+---
+
+### ✅ Expected Result
+
+Describe what the correct behavior should be.
+Example:
+
+* Method `Bar` should return a non-null string.
+* No exception should be thrown.
+
+---
+
+### 📄 Actual Result / Logs
+
+Include any errors, stack traces, or console output:
+
+```text
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyLibrary.Foo.Bar(String input) in Foo.cs:line 42
+```
+
+---
+
+### ⚙ Additional Information
+
+* Is the library used in a multi-threaded environment?
+* Are there other libraries that might conflict?
+* Does the issue appear on specific hardware or OS versions?
+* Any workarounds tried?
