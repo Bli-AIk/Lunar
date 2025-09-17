@@ -1,0 +1,3 @@
+[submodule "src/Lunar.Core.Base"]
+	path = src/Lunar.Core.Base
+	url = git@github.com:Bli-AIk/Lunar.Core.Base.git
