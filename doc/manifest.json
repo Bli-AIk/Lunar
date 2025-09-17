@@ -1,0 +1,456 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/aik/Projects/UnityProjects/Lunar-Original/Lunar/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "ZlMrrN4DGSiTZLiNnHKBYk1zMXwVU4dKEyiyTZo4dSg="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "rawTitle": "<h1 id=\"unityfx\" sourcefile=\"README.md\" sourcestartlinenumber=\"1\">UnityFX</h1>"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Components.GameObjectComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Components.GameObjectComponent.html",
+          "hash": "zU9uSoGIzh9ejboBTaxXMEGJMAHizHOM6O5qZ77DilM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Components.NameComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Components.NameComponent.html",
+          "hash": "MYQpZE81ZgTYCY/h1HTUQVPqCHCvvblHwrCH+3sn+9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Components.SpriteComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Components.SpriteComponent.html",
+          "hash": "SkjlAikg3NRMG99Zj0qHCILnsIxq3zLryNIOHwXShQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Components.TransformComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Components.TransformComponent.html",
+          "hash": "h5HHyWz5P9Xf76001TXALxBh0Yov/m1WdaxBWKhbTGM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Components.html",
+          "hash": "1+aKkWON6tWEHuzr62yeFWsg6gWH+wJUL58DXjHAXnI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.GameControllerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.GameControllerBase.html",
+          "hash": "aMQMBdoAuz6urqSxsoL2doWqRQw23O9jM3fb+xMo93E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.GameObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.GameObject.html",
+          "hash": "olgBlUJNr83wlPmpFNLPmOErBNggdVdHR9GfJvVHJ94="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Interfaces.IInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Interfaces.IInput.html",
+          "hash": "nyx9xTH+T0tyazYdwjYA5/Tq11p2CTwa7O1dT43qyA0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Interfaces.IInputActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Interfaces.IInputActions.html",
+          "hash": "0d1u9ndBsBoIRy3db7K41Tx8cMrSu87zoUsSnE6gqzE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Interfaces.ILogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Interfaces.ILogger.html",
+          "hash": "zqlQeEmtkYBvGjLHj5izxsm4PgQnEWSqvnSn98uYl7U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Interfaces.IResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Interfaces.IResources.html",
+          "hash": "Or/a5DhZ+F7g2VmkZvn+aVuLMtc3h88v+0cA00KT3iE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Interfaces.IResourcesAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Interfaces.IResourcesAsync.html",
+          "hash": "5dyhW6OVuSJjUvSm7kkTTXXGYiHU5avSkwZoRdaGMaU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Interfaces.html",
+          "hash": "MPvlDNp3kkHp+xW7d0g6BdV6S0LqpBnf9C4ic2Rdlt0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.KeyCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.KeyCode.html",
+          "hash": "zxYnBmtPsQ04HZiOfI+Tzz5AncJ5Cmjm2uAFjkGkzqQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Modules.TypeWriter.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Modules.TypeWriter.State.html",
+          "hash": "tbiEagfAw7W3VFWKpo1ChMQ/UJfzqe30lo17mqcoRK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Modules.TypeWriter.Test.TypeWriterTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Modules.TypeWriter.Test.TypeWriterTest.html",
+          "hash": "+ijKDYugNqGszqQnbxC+kWJ9q441EeV74mhWE3+qccc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Modules.TypeWriter.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Modules.TypeWriter.Test.html",
+          "hash": "w8AcDgRJQZG/LybnHJsA2b90hl2psJ0xD4JBXHmqhPY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Modules.TypeWriter.TypeWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Modules.TypeWriter.TypeWriter.html",
+          "hash": "CZ13CJ0YrYkzucCkWqR4c+21BAmyBru11RvOiYbhks8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Modules.TypeWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Modules.TypeWriter.html",
+          "hash": "3F+gNSY+eyOjBpCWXT6wONnWEUZXiMyJJKHumxQJGNA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Sprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Sprite.html",
+          "hash": "EwE78a72ILZGlR202E2zVdBb3wd8xJCM99Y7ucW+BgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Systems.GameObjectSyncSystemBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Systems.GameObjectSyncSystemBase.html",
+          "hash": "1Oz4vd5cbwml9KdjjovquNLQfYF1A0WU9CHM8m0ZG/I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Systems.SpriteCleanSystemBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Systems.SpriteCleanSystemBase.html",
+          "hash": "w+K03x1Y+Wx2lsRN7FBRGjLiClh4livPClI5THSD6x0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Systems.SpriteSyncSystemBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Systems.SpriteSyncSystemBase.html",
+          "hash": "0VClt0U5Fgd7uSkru3b4v5q+egHZ0dMjEojT+QeacOs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Systems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Systems.html",
+          "hash": "o1LdmXTJp7C8OcIu6ezuseltG+oZbqiTmrrrty8sGXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.html",
+          "hash": "6Ssqb7an1TTyyK7En0ldP2/8WuACQF/iYdRWH1nzx2g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "aLLkwUbm+77ZjCBcjIV2ESzhiLNrxHSniDa2emmGo0w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html",
+          "hash": "13RJ48HIDiP769fxmzcn0u0Zy9enr6Po3Iu/3muix2M="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "rawTitle": "<h1 id=\"getting-started\" sourcefile=\"docs/getting-started.md\" sourcestartlinenumber=\"1\">Getting Started</h1>"
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html",
+          "hash": "D1G1bwhSBze5bMYpHv7INsIRXf7acTWbSgupn4+grGY="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "rawTitle": "<h1 id=\"introduction\" sourcefile=\"docs/introduction.md\" sourcestartlinenumber=\"1\">Introduction</h1>"
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html",
+          "hash": "dEg4vNJttsFNrPQ2PBDQzg4Rf1UMrrc7EXWNlSSB4W0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "PWCy2Q3IRWE7XMorslW7AycnnJG396uO/F3zMB3e540="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "rawTitle": "<h1 id=\"this-is-the-homepage\" sourcefile=\"index.md\" sourcestartlinenumber=\"5\">This is the <strong sourcefile=\"index.md\" sourcestartlinenumber=\"5\">HOMEPAGE</strong>...</h1>"
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Ag9xKnnGQ0gR+/Fgr2e5QCS1ZVIoLsA77SnBXDn22v4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 25,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
